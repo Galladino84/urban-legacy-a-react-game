@@ -28,8 +28,9 @@ function CharacterCreation() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Dati personaggio:", formData);
-    // Salveremo in LocalStorage o passeremo alla prossima schermata
+    localStorage.setItem("personaggio", JSON.stringify(formData));
+    alert("Personaggio creato! Passa alla schermata di gioco.");
+    window.location.reload(); // Per aggiornare la sidebar dopo la creazione
   };
 
   return (
