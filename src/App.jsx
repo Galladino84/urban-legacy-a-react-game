@@ -1,18 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CharacterCreation from "./components/CharacterCreation";
-import SidebarLeft from "./components/SidebarLeft";
-import SidebarRight from "./components/SidebarRight";
+import GameMainScreen from "./components/GameMainScreen";
 
 
 function App() {
   return (
-    <div className="d-flex">
-      <SidebarLeft />
-      <main className="main-content">
-        <CharacterCreation />
-      </main>
-      <SidebarRight />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<CharacterCreation />} />
+        <Route path="/game" element={<GameMainScreen />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import stats from "../data/stats.json";
 
 function CharacterCreation() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     nome: "",
     cognome: "",
     sesso: "maschio",
     percorso: "Tabboz",
     orientamento: "etero",
-    famiglia: { mamma: true, sorella: true }
+    famiglia: { mamma: true, sorella: true },
+    statistiche: {} // Aggiungiamo le statistiche
   });
 
   const handleChange = (e) => {
@@ -28,9 +32,16 @@ function CharacterCreation() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("personaggio", JSON.stringify(formData));
-    alert("Personaggio creato! Passa alla schermata di gioco.");
-    window.location.reload(); // Per aggiornare la sidebar dopo la creazione
+    const { percorso, sesso } = formData;
+    const statisticheIniziali = stats[percorso][sesso];
+
+    const personaggio = {
+      ...formData,
+      statistiche: statisticheIniziali
+    };
+
+    localStorage.setItem("personaggio", JSON.stringify(personaggio));
+    navigate("/game");
   };
 
   return (
@@ -71,9 +82,7 @@ function CharacterCreation() {
               onChange={handleChange}
               id="sessoMaschio"
             />
-            <label className="form-check-label" htmlFor="sessoMaschio">
-              Maschio
-            </label>
+            <label className="form-check-label" htmlFor="sessoMaschio">Maschio</label>
           </div>
           <div className="form-check">
             <input
@@ -85,19 +94,12 @@ function CharacterCreation() {
               onChange={handleChange}
               id="sessoFemmina"
             />
-            <label className="form-check-label" htmlFor="sessoFemmina">
-              Femmina
-            </label>
+            <label className="form-check-label" htmlFor="sessoFemmina">Femmina</label>
           </div>
         </div>
         <div className="mb-3">
           <label className="form-label">Percorso</label>
-          <select
-            className="form-select"
-            name="percorso"
-            value={formData.percorso}
-            onChange={handleChange}
-          >
+          <select className="form-select" name="percorso" value={formData.percorso} onChange={handleChange}>
             <option value="Tabboz">Tabboz</option>
             <option value="Goth">Goth</option>
             <option value="Metallaro">Metallaro</option>
@@ -106,12 +108,7 @@ function CharacterCreation() {
         </div>
         <div className="mb-3">
           <label className="form-label">Orientamento Sessuale</label>
-          <select
-            className="form-select"
-            name="orientamento"
-            value={formData.orientamento}
-            onChange={handleChange}
-          >
+          <select className="form-select" name="orientamento" value={formData.orientamento} onChange={handleChange}>
             <option value="etero">Etero</option>
             <option value="omo">Omosessuale</option>
             <option value="bi">Bisessuale</option>
@@ -120,35 +117,15 @@ function CharacterCreation() {
         <div className="mb-3">
           <label className="form-label">Composizione Familiare</label>
           <div className="form-check">
-            <input
-              type="checkbox"
-              className="form-check-input"
-              name="mamma"
-              checked={formData.famiglia.mamma}
-              onChange={handleFamilyChange}
-              id="famigliaMamma"
-            />
-            <label className="form-check-label" htmlFor="famigliaMamma">
-              Mamma
-            </label>
+            <input type="checkbox" className="form-check-input" name="mamma" checked={formData.famiglia.mamma} onChange={handleFamilyChange} />
+            <label className="form-check-label">Mamma</label>
           </div>
           <div className="form-check">
-            <input
-              type="checkbox"
-              className="form-check-input"
-              name="sorella"
-              checked={formData.famiglia.sorella}
-              onChange={handleFamilyChange}
-              id="famigliaSorella"
-            />
-            <label className="form-check-label" htmlFor="famigliaSorella">
-              Sorella
-            </label>
+            <input type="checkbox" className="form-check-input" name="sorella" checked={formData.famiglia.sorella} onChange={handleFamilyChange} />
+            <label className="form-check-label">Sorella</label>
           </div>
         </div>
-        <button type="submit" className="btn btn-primary">
-          Crea Personaggio
-        </button>
+        <button type="submit" className="btn btn-primary mt-3">Crea Personaggio</button>
       </form>
     </div>
   );
