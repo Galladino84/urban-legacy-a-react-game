@@ -1,0 +1,54 @@
+.avatar-container {
+    position: relative;
+    width: 276px;
+    height: 389px;
+    margin: 0 auto;
+    
+  
+    .mirror,
+    .avatar {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      left: 0;
+      top: 0;
+    }
+  
+    .mirror {
+      z-index: 5;
+      left: 0;
+      top: 10px;
+    }
+  
+    .avatar {
+      z-index: 2;
+    }
+  }
+  
+  .accordion-button {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+    &:hover {
+      background-color: #e2e6ea;
+    }
+  
+    &::after {
+      transition: transform 0.3s ease;
+    }
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); // Freccia che ruota
+  }
+  
+  .accordion-collapse {
+    transition: height 0.35s ease, opacity 0.35s ease;
+    opacity: 0;
+  }
+  
+  .accordion-collapse.show {
+    opacity: 1;
+  }
