@@ -1,9 +1,14 @@
 $theme_class : "theme_goth";
 $theme_goth_secondary: #54244F;
 $theme_goth_dark: #000000;
+$theme_goth_light: #ffffff;
 
 .theme_goth {
   .main-content {
+
+    background-color: $theme_goth_dark;
+    color: $theme_goth_light;
+
     &h2, &h3 {
       font-family: "League Gothic", serif;
     font-optical-sizing: auto;

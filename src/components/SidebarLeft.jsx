@@ -13,9 +13,13 @@ function SidebarLeft() {
   const placeholderLogo = `src/assets/logos/placeholder.png`;
   const placeholderMirror = `src/assets/mirrors/mirror_placeholder.png`;
 
+  // 🛑 Funzione aggiornata per resettare tutto
   const handleReset = () => {
     localStorage.removeItem("personaggio");
-    window.location.href = "/";
+    localStorage.removeItem("giorno"); // Rimuove il salvataggio del giorno
+    localStorage.removeItem("fase");   // Rimuove il salvataggio della fase
+    localStorage.removeItem("data");   // Rimuove la data corrente
+    window.location.href = "/"; // Torna alla schermata di creazione personaggio
   };
 
   // Genera le stelle per lo status
@@ -53,7 +57,7 @@ function SidebarLeft() {
         />
       </div>
 
-      
+      {/* Profilo */}
       <p>
         {personaggio?.nome} {personaggio?.cognome}<br />
         {personaggio?.percorso}<br />
