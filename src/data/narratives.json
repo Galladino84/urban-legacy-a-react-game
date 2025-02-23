@@ -1,352 +1,369 @@
 {
     "risveglio": {
+      "extraEvent": "bagno_famiglia",
+      "petEvent": "pet_risveglio",
       "maschio": {
         "tabboz": {
-          "testo": "Ti svegli con la musica a tutto volume.",
+          "testo": "Questa mattina la sveglia è suonata a tutto volume con la tua musica techno preferita. Ti alzi e, stropicciandoti gli occhi, ti dirigi verso il bagno, pronto a iniziare la giornata con energia e ritmo.",
           "scelte": [
             {
-              "testo": "Spegni subito la sveglia.",
-              "conseguenza": "Ti senti leggermente più energico.",
-              "modificheStatistiche": { "status": 1 }
+              "testo": "Doccia lunga",
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
+              "modificheStatistiche": { "carisma": 1 }
             },
             {
-              "testo": "Ignora la sveglia e dormi ancora.",
-              "conseguenza": "Ti svegli in ritardo ma riposato.",
-              "modificheStatistiche": { "status": -1 }
+              "testo": "Doccia breve",
+              "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
+              "modificheStatistiche": { "carisma": 0 }
+              
+            },
+            {
+              "testo": "Per oggi salti",
+              "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
+              "modificheStatistiche": { "carisma": -1 }
+              
             }
           ]
         },
         "goth": {
-          "testo": "Ti svegli con la musica a tutto volume.",
+          "testo": "Una melodia cupa e lenta, quasi un requiem per il sonno, ti richiama alla realtà. Con occhi ancora velati dall’ombra della notte, ti alzi in modo misurato, immergendoti nell'atmosfera oscura e misteriosa della tua stanza, mentre ti dirigi verso il bagno con passo quasi rituale.",
           "scelte": [
             {
-              "testo": "Spegni subito la sveglia.",
-              "conseguenza": "Ti senti leggermente più energico.",
-              "modificheStatistiche": { "status": 1 }
+              "testo": "Doccia lunga",
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
+              "modificheStatistiche": { "carisma": 1 }
             },
             {
-              "testo": "Ignora la sveglia e dormi ancora.",
-              "conseguenza": "Ti svegli in ritardo ma riposato.",
-              "modificheStatistiche": { "status": -1 }
+              "testo": "Doccia breve",
+              "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
+              "modificheStatistiche": { "carisma": 0 }
+              
+            },
+            {
+              "testo": "Per oggi salti",
+              "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
+              "modificheStatistiche": { "carisma": -1 }
+              
             }
           ]
         },
         "metallaro": {
-          "testo": "Ti svegli con la musica a tutto volume.",
+          "testo": "Le chitarre distorte e la batteria ruggente della tua sveglia scuotono il silenzio della notte, infondendoti un’energia ribelle. Con un grugnito soddisfatto, ti sollevi dal letto, pronto a far vibrare il mondo mentre ti dirigi verso il bagno.",
           "scelte": [
             {
-              "testo": "Spegni subito la sveglia.",
-              "conseguenza": "Ti senti leggermente più energico.",
-              "modificheStatistiche": { "status": 1 }
+              "testo": "Doccia lunga",
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
+              "modificheStatistiche": { "carisma": 1 }
             },
             {
-              "testo": "Ignora la sveglia e dormi ancora.",
-              "conseguenza": "Ti svegli in ritardo ma riposato.",
-              "modificheStatistiche": { "status": -1 }
+              "testo": "Doccia breve",
+              "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
+              "modificheStatistiche": { "carisma": 0 }
+              
+            },
+            {
+              "testo": "Per oggi salti",
+              "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
+              "modificheStatistiche": { "carisma": -1 }
+              
             }
           ]
         },
         "nerd": {
-          "testo": "Ti svegli con la musica a tutto volume.",
+          "testo": "Un delicato suono sintetico, quasi come il segnale di avvio di un videogioco, ti risveglia. Con movimenti quasi meccanici, ti alzi dal letto, scuotendo via le ultime briciole di sogni digitali, e ti dirigi verso il bagno per iniziare il debug della giornata.",
           "scelte": [
             {
-              "testo": "Spegni subito la sveglia.",
-              "conseguenza": "Ti senti leggermente più energico.",
-              "modificheStatistiche": { "status": 1 }
+              "testo": "Doccia lunga",
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
+              "modificheStatistiche": { "carisma": 1 }
             },
             {
-              "testo": "Ignora la sveglia e dormi ancora.",
-              "conseguenza": "Ti svegli in ritardo ma riposato.",
-              "modificheStatistiche": { "status": -1 }
+              "testo": "Doccia breve",
+              "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
+              "modificheStatistiche": { "carisma": 0 }
+              
+            },
+            {
+              "testo": "Per oggi salti",
+              "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
+              "modificheStatistiche": { "carisma": -1 }
+              
             }
           ]
         }
       },
       "femmina": {
         "tabboz": {
-          "testo": "Il tuo gatto ti osserva dalla poltrona, lo saguardo ammiccante che fà trasparire un distaccato affetto, tipico del tuo amico felino.Dopo aver visto che cambiavi posizione per alzarti dal letto il micio salta giù dalla poltrona per venire a strusciarsi.",
+          "testo": "Il suono travolgente della tua sveglia in techno irrompe nel silenzio della stanza. Ti sollevi dal letto con un sorriso, accarezzandoti i capelli ancora disordinati, e ti muovi verso il bagno, pronta ad affrontare la giornata con stile e determinazione.",
           "scelte": [
             {
-              "testo": "Accarezzi il gatto.",
-              "conseguenza": "Il gatto fa le fusa e ti senti meglio.",
+              "testo": "Doccia lunga",
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
               "modificheStatistiche": { "carisma": 1 }
             },
             {
-              "testo": "Lo ignori e ti prepari.",
-              "conseguenza": "Il gatto ti guarda male.",
-              "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
+              "testo": "Doccia breve",
+              "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
+              "modificheStatistiche": { "carisma": 0 }
+              
+            },
+            {
+              "testo": "Per oggi salti",
+              "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
+              "modificheStatistiche": { "carisma": -1 }
+              
             }
           ]
         },
         "goth": {
-          "testo": "Il tuo gatto ti osserva dalla poltrona, lo saguardo ammiccante che fà trasparire un distaccato affetto, tipico del tuo amico felino.Dopo aver visto che cambiavi posizione per alzarti dal letto il micio salta giù dalla poltrona per venire a strusciarsi.",
+          "testo": "Una sinistra melodia gotica, carica di echi malinconici, interrompe il tuo sonno. Ti sollevi dal letto con grazia, i tuoi movimenti quasi coreografici in un rituale di rinascita, mentre ti prepari ad abbracciare un nuovo giorno nell’eleganza dell’oscurità.",
           "scelte": [
             {
-              "testo": "Accarezzi il gatto.",
-              "conseguenza": "Il gatto fa le fusa e ti senti meglio.",
+              "testo": "Doccia lunga",
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
               "modificheStatistiche": { "carisma": 1 }
             },
             {
-              "testo": "Lo ignori e ti prepari.",
-              "conseguenza": "Il gatto ti guarda male.",
-              "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
+              "testo": "Doccia breve",
+              "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
+              "modificheStatistiche": { "carisma": 0 }
+              
+            },
+            {
+              "testo": "Per oggi salti",
+              "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
+              "modificheStatistiche": { "carisma": -1 }
+              
             }
           ]
         },
         "metallaro": {
-          "testo": "Il tuo gatto ti osserva dalla poltrona, lo saguardo ammiccante che fà trasparire un distaccato affetto, tipico del tuo amico felino.Dopo aver visto che cambiavi posizione per alzarti dal letto il micio salta giù dalla poltrona per venire a strusciarsi.",
+          "testo": "La sveglia ruggisce come un assalto di riff elettrici, facendo tremare la stanza. Con spirito indomito e un tocco di grinta, ti levi dal letto, pronta a conquistare la giornata con la potenza del metal che scorre nelle vene, mentre ti dirigi verso il bagno.",
           "scelte": [
             {
-              "testo": "Accarezzi il gatto.",
-              "conseguenza": "Il gatto fa le fusa e ti senti meglio.",
+              "testo": "Doccia lunga",
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
               "modificheStatistiche": { "carisma": 1 }
             },
             {
-              "testo": "Lo ignori e ti prepari.",
-              "conseguenza": "Il gatto ti guarda male.",
-              "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
+              "testo": "Doccia breve",
+              "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
+              "modificheStatistiche": { "carisma": 0 }
+              
+            },
+            {
+              "testo": "Per oggi salti",
+              "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
+              "modificheStatistiche": { "carisma": -1 }
+              
             }
           ]
         },
         "nerd": {
-          "testo": "Il tuo gatto ti osserva dalla poltrona, lo saguardo ammiccante che fà trasparire un distaccato affetto, tipico del tuo amico felino.Dopo aver visto che cambiavi posizione per alzarti dal letto il micio salta giù dalla poltrona per venire a strusciarsi.",
+          "testo": "La sveglia emette un tono ispirato ai classici suoni arcade, annunciando l’inizio di una nuova sfida quotidiana. Con gli occhiali leggermente scivolati e un sorriso compiaciuto, ti sollevi dal letto, pronta a decifrare il codice della giornata mentre ti dirigi verso il bagno.",
           "scelte": [
             {
-              "testo": "Accarezzi il gatto.",
-              "conseguenza": "Il gatto fa le fusa e ti senti meglio.",
+              "testo": "Doccia lunga",
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
               "modificheStatistiche": { "carisma": 1 }
             },
             {
-              "testo": "Lo ignori e ti prepari.",
-              "conseguenza": "Il gatto ti guarda male.",
-              "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
+              "testo": "Doccia breve",
+              "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
+              "modificheStatistiche": { "carisma": 0 }
+              
+            },
+            {
+              "testo": "Per oggi salti",
+              "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
+              "modificheStatistiche": { "carisma": -1 }
+              
             }
           ]
         }
       }
+
     },
 
     "mattina_presto": {
+      "extraEvent": "colazione_famiglia",
+      "petEvent": "pet_mattina_presto",
       "maschio": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Appena vestito, trovi la tua famiglia già intenti a preparare la colazione nella cucina inondata di luce. Mentre il profumo del caffè e delle torte ti accoglie, ti fermi un attimo a riflettere: unirti al calore domestico o uscire di casa, salutandoli con un cenno deciso, per affrontare la giornata con la tua solita grinta?",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "testo": "Fai colazione con la tua famiglia",
+              "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
+              "modificheStatistiche": { "intelligenza": 1 }
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "Fai colazione da solo",
+              "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
+              "modificheStatistiche": { "status": -1 }
+            
+            },
+            {
+              "testo": "Salti la colazione",
+              "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
+              "modificheStatistiche": { "status": -1 }
+            
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Vestito con il tuo stile oscuro, varchi la soglia della cucina, dove la luce soffusa rivela una famiglia intenta a preparare la colazione. In quell’istante, il silenzio carico di malinconia ti pone davanti a un bivio: restare immerso nell’intimità familiare o uscire, salutandoli con un gesto freddo e misurato, per abbracciare il grigio mattino.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "testo": "Fai colazione con la tua famiglia",
+              "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
+              "modificheStatistiche": { "intelligenza": 1 }
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "Fai colazione da solo",
+              "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
+              "modificheStatistiche": { "status": -1 }
+            
+            },
+            {
+              "testo": "Salti la colazione",
+              "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
+              "modificheStatistiche": { "status": -1 }
+            
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Con il look al top e l’energia ribelle ancora nelle vene, ti imbatti nella cucina dove la tua famiglia sta preparando la colazione con un’energia contagiosa. Tra il clangore delle posate e il rumore familiare, senti il richiamo del metal: puoi decidere di unirti a loro per un attimo di normalità oppure uscire di casa, salutandoli con un grugnito deciso che riecheggia la potenza del tuo spirito rocker.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "testo": "Fai colazione con la tua famiglia",
+              "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
+              "modificheStatistiche": { "intelligenza": 1 }
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "Fai colazione da solo",
+              "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
+              "modificheStatistiche": { "status": -1 }
+            
+            },
+            {
+              "testo": "Salti la colazione",
+              "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
+              "modificheStatistiche": { "status": -1 }
+            
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Con l’abbigliamento ordinato e ogni dettaglio curato, apri la porta della cucina e trovi la tua famiglia intenta a preparare la colazione, quasi come in un esperimento quotidiano. Ora, il tuo spirito analitico si ferma a ponderare: unirti al rituale familiare per condividere un momento di quotidiana normalità oppure uscire, salutandoli con un cenno amichevole, per iniziare il giorno con una nota di innovazione.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "testo": "Fai colazione con la tua famiglia",
+              "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
+              "modificheStatistiche": { "intelligenza": 1 }
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "Fai colazione da solo",
+              "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
+              "modificheStatistiche": { "status": -1 }
+            
+            },
+            {
+              "testo": "Salti la colazione",
+              "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
+              "modificheStatistiche": { "status": -1 }
+            
             }
           ]
         }
       },
       "femmina": {
-        "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+        "tabboz": {
+          "testo": "Con il sorriso ancora sulle labbra e gli occhi pieni di determinazione, apri la porta della cucina dove la tua famiglia si sta già preparando a darti il buongiorno con un abbraccio caloroso. Il profumo del caffè ti invita a unirti a questo dolce rituale, oppure puoi scegliere di uscire, salutandoli affettuosamente mentre inizi la tua giornata.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "testo": "Fai colazione con la tua famiglia",
+              "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
+              "modificheStatistiche": { "intelligenza": 1 }
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "Fai colazione da solo",
+              "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
+              "modificheStatistiche": { "status": -1 }
+            
+            },
+            {
+              "testo": "Salti la colazione",
+              "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
+              "modificheStatistiche": { "status": -1 }
+            
+            }
+          ]
+        },
+        "goth": {
+          "testo": "Avvolta in un’aura di eleganza malinconica, osservi la scena familiare: la tua famiglia, immersa in luci soffuse, prepara la colazione con calma rituale. In quel momento, puoi scegliere se fonderti con quel calore domestico o uscire, salutandoli con un gesto raffinato, per lasciarti avvolgere dalla tua eterna ricerca di ombre e mistero.",
+          "scelte": [
+            {
+              "testo": "Fai colazione con la tua famiglia",
+              "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
+              "modificheStatistiche": { "intelligenza": 1 }
+            },
+            {
+              "testo": "Fai colazione da solo",
+              "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
+              "modificheStatistiche": { "status": -1 }
+            
+            },
+            {
+              "testo": "Salti la colazione",
+              "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
+              "modificheStatistiche": { "status": -1 }
+            
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "Appena vestita e con l’adrenalina che ancora pulsa al ritmo della tua musica preferita, ti trovi in cucina, dove la famiglia si destreggia tra risate e preparativi. In quel preciso istante, il tuo spirito ribelle ti offre due strade: unirti a questo momento di intimità domestica o uscire, salutandoli con uno sguardo determinato, pronta a scatenare la forza del metal nella tua giornata.",
+          "scelte": [
+            {
+              "testo": "Fai colazione con la tua famiglia",
+              "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
+              "modificheStatistiche": { "intelligenza": 1 }
+            },
+            {
+              "testo": "Fai colazione da solo",
+              "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
+              "modificheStatistiche": { "status": -1 }
+            
+            },
+            {
+              "testo": "Salti la colazione",
+              "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
+              "modificheStatistiche": { "status": -1 }
+            
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "Con gli occhiali appena sistemati e un look impeccabile, varchi la soglia della cucina e osservi la tua famiglia mentre prepara la colazione, in una sorta di rituale scientifico che dà il via alla giornata. Ti trovi davanti a un bivio: abbracciare il calore del convivio familiare oppure uscire, salutandoli con un sorriso gentile, pronta a decifrare e programmare ogni sfida che il giorno ha in serbo.",
+          "scelte": [
+            {
+              "testo": "Fai colazione con la tua famiglia",
+              "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
+              "modificheStatistiche": { "intelligenza": 1 }
+            },
+            {
+              "testo": "Fai colazione da solo",
+              "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
+              "modificheStatistiche": { "status": -1 }
+            
+            },
+            {
+              "testo": "Salti la colazione",
+              "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
+              "modificheStatistiche": { "status": -1 }
+            
             }
           ]
         }
@@ -354,19 +371,22 @@
     },
 
     "mattina": {
+      "extraEvent": "scuola_meteo",
       "maschio": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Di fronte alla scuola, il sole mattutino accende la tua voglia di avventura. Il brusio della città e l’ordinaria routine delle lezioni si scontrano con il tuo spirito libero. In questo istante, rifletti: seguire il percorso consueto o osare per un giorno fuori dagli schemi?",
           "scelte": [
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 0 },
+              "extraMechanic": "scuola",
+              "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
+                  "modificheStatistiche": { "intelligenza": 1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
@@ -383,34 +403,40 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
+                  "modificheStatistiche": { "status": 1 },
+                  "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
+                  "modificheStatistiche": { "soldi": 20 },
+                  "extraMechanic": "lavoro"
                 },
                 {
-                  "testo": "Vai in centro a incontrare amici.",
+                  "testo": "Vai a fare shopping",
                   "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 },
+                  "extraMechanic": "negozi",
+                  "extraEvent": "bigio_shopping"
                 }
               ]
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Sotto un cielo grigio e carico di malinconia, ti trovi davanti alla scuola, simbolo di un ordine che sembra opprimere la tua natura ribelle. Le ombre del mattino invitano a riflettere: conformarsi al rituale delle lezioni o abbracciare un sentiero solitario e oscuro, lontano dalla convenzione?",
           "scelte": [
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 0 },
+              "extraMechanic": "scuola",
+              "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
+                  "modificheStatistiche": { "intelligenza": 1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
@@ -427,34 +453,40 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
+                  "modificheStatistiche": { "status": 1 },
+                  "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
+                  "modificheStatistiche": { "soldi": 20 },
+                  "extraMechanic": "lavoro"
                 },
                 {
-                  "testo": "Vai in centro a incontrare amici.",
+                  "testo": "Vai a fare shopping",
                   "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 },
+                  "extraMechanic": "negozi",
+                  "extraEvent": "bigio_shopping"
                 }
               ]
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "La facciata della scuola si staglia davanti a te mentre il mattino esplode in un ritmo pulsante, quasi a fare da sottofondo al tuo spirito rock. Le campane risuonano come un invito alla normalità, ma il richiamo del metal ti spinge a interrogarti: partecipare alle lezioni o lanciarti in un’avventura che scuota la routine?",
           "scelte": [
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 0 },
+              "extraMechanic": "scuola",
+              "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
+                  "modificheStatistiche": { "intelligenza": 1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
@@ -471,34 +503,40 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
+                  "modificheStatistiche": { "status": 1 },
+                  "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
+                  "modificheStatistiche": { "soldi": 20 },
+                  "extraMechanic": "lavoro"
                 },
                 {
-                  "testo": "Vai in centro a incontrare amici.",
+                  "testo": "Vai a fare shopping",
                   "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 },
+                  "extraMechanic": "negozi",
+                  "extraEvent": "bigio_shopping"
                 }
               ]
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Con lo sguardo attento e la mente sempre in fermento, ti fermi davanti alla scuola, emblema di conoscenza e routine. Il dilemma si fa subito evidente: partecipare alle lezioni per accumulare sapere oppure deviare dal percorso tradizionale, esplorando nuove frontiere che stimolano la tua curiosità?",
           "scelte": [
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 0 },
+              "extraMechanic": "scuola",
+              "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
+                  "modificheStatistiche": { "intelligenza": 1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
@@ -515,17 +553,21 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
+                  "modificheStatistiche": { "status": 1 },
+                  "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
+                  "modificheStatistiche": { "soldi": 20 },
+                  "extraMechanic": "lavoro"
                 },
                 {
-                  "testo": "Vai in centro a incontrare amici.",
+                  "testo": "Vai a fare shopping",
                   "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 },
+                  "extraMechanic": "negozi",
+                  "extraEvent": "bigio_shopping"
                 }
               ]
             }
@@ -534,17 +576,19 @@
       },
       "femmina": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Il mattino bacia la facciata della scuola, illuminando il percorso quotidiano che conosci così bene. Tuttavia, il battito del tuo cuore ti suggerisce che la routine delle lezioni potrebbe essere messa da parte per un’avventura personale. Quale strada sceglierai oggi?",
           "scelte": [
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 0 },
+              "extraMechanic": "scuola",
+              "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
+                  "modificheStatistiche": { "intelligenza": 1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
@@ -561,34 +605,40 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
+                  "modificheStatistiche": { "status": 1 },
+                  "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
+                  "modificheStatistiche": { "soldi": 20 },
+                  "extraMechanic": "lavoro"
                 },
                 {
-                  "testo": "Vai in centro a incontrare amici.",
+                  "testo": "Vai a fare shopping",
                   "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 },
+                  "extraMechanic": "negozi",
+                  "extraEvent": "bigio_shopping"
                 }
               ]
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Il crepuscolo del mattino trasforma la scuola in un edificio austero, quasi un monito contro la tua inclinazione al mistero. Avvolta in un’aura enigmatica, senti il peso della scelta: seguire il rigido percorso delle lezioni o lasciarti trasportare da un impulso di ribellione, fuggendo dalla monotonia?",
           "scelte": [
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 0 },
+              "extraMechanic": "scuola",
+              "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
+                  "modificheStatistiche": { "intelligenza": 1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
@@ -605,34 +655,40 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
+                  "modificheStatistiche": { "status": 1 },
+                  "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
+                  "modificheStatistiche": { "soldi": 20 },
+                  "extraMechanic": "lavoro"
                 },
                 {
-                  "testo": "Vai in centro a incontrare amici.",
+                  "testo": "Vai a fare shopping",
                   "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 },
+                  "extraMechanic": "negozi",
+                  "extraEvent": "bigio_shopping"
                 }
               ]
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Nel bagliore energico del mattino, la scuola appare come una tappa obbligata. Tuttavia, l’adrenalina che scorre nelle tue vene e il ritmo incalzante della tua musica preferita ti inducono a riflettere: abbracciare il dovere delle lezioni o seguire un percorso alternativo, dove la tua grinta e creatività possono esprimersi a pieno?",
           "scelte": [
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 0 },
+              "extraMechanic": "scuola",
+              "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
+                  "modificheStatistiche": { "intelligenza": 1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
@@ -649,34 +705,40 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
+                  "modificheStatistiche": { "status": 1 },
+                  "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
+                  "modificheStatistiche": { "soldi": 20 },
+                  "extraMechanic": "lavoro"
                 },
                 {
-                  "testo": "Vai in centro a incontrare amici.",
+                  "testo": "Vai a fare shopping",
                   "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 },
+                  "extraMechanic": "negozi",
+                  "extraEvent": "bigio_shopping"
                 }
               ]
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Il mattino ti accoglie davanti alla scuola, luogo di apprendimento e sfide intellettuali. Con occhio critico e spirito innovativo, ponderi la scelta: seguire il percorso ordinario delle lezioni, o approfittare di quell’istante per esplorare strade alternative che alimentino la tua passione per il sapere?",
           "scelte": [
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 0 },
+              "extraMechanic": "scuola",
+              "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
+                  "modificheStatistiche": { "intelligenza": 1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
@@ -693,17 +755,21 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
+                  "modificheStatistiche": { "status": 1 },
+                  "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
+                  "modificheStatistiche": { "soldi": 20 },
+                  "extraMechanic": "lavoro"
                 },
                 {
-                  "testo": "Vai in centro a incontrare amici.",
+                  "testo": "Vai a fare shopping",
                   "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 },
+                  "extraMechanic": "negozi",
+                  "extraEvent": "bigio_shopping"
                 }
               ]
             }
@@ -714,358 +780,288 @@
 
 
     "pomeriggio": {
+      "petEvent": "pet_pomeriggio",
+      "extraEvent":"pomeriggio_social",
       "maschio": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Nel pomeriggio, mentre il sole si fa complice dei tuoi pensieri, ti trovi all’ingresso di casa. Le opzioni si susseguono: fare compere per rinnovare il tuo stile, affrontare il lavoro part-time per qualche guadagno extra, dedicarti allo studio per prepararti alle prossime sfide o uscire per socializzare e respirare un po’ di vita. È il momento di decidere il percorso della tua giornata.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Rimani a studiare",
+              "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extraMechanic": "studio_materia"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "Vado al mio lavoro part-time",
+              "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "lavoro"
+            },
+            {
+              "testo": "Vado a fare compere",
+              "conseguenza": "Ti prepari per andare a fare shopping",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "negozi"
+            },
+            {
+              "testo": "Ti organizzi per uscire",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
+            },
+            {
+              "testo": "Passi il tempo con la famiglia",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Il pomeriggio si tinge di tonalità cupe mentre ti trovi davanti alla porta di casa. In questo silenzio intriso di introspezione, il destino ti offre una scelta: esplorare i vicoli dei negozi, adempiere al dovere del lavoro part-time, rifugiarti nelle pagine di un libro o cercare il conforto della compagnia in un momento di socializzazione. Ogni opzione risuona come un’eco dell’anima.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Rimani a studiare",
+              "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extraMechanic": "studio_materia"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "Vado al mio lavoro part-time",
+              "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "lavoro"
+            },
+            {
+              "testo": "Vado a fare compere",
+              "conseguenza": "Ti prepari per andare a fare shopping",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "negozi"
+            },
+            {
+              "testo": "Ti organizzi per uscire",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
+            },
+            {
+              "testo": "Passi il tempo con la famiglia",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Con il pomeriggio che rimbomba come un assolo di chitarra, ti fermi all’ingresso di casa e ascolti il ritmo della tua giornata. Le strade si aprono davanti a te: fare compere per aggiungere nuovi riff al tuo stile, dirigerti verso il lavoro part-time, immergerti nello studio per affinare le tue abilità o uscire per socializzare e sentire l’energia della folla. È il momento di alzare il volume sulla tua scelta.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Rimani a studiare",
+              "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extraMechanic": "studio_materia"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "Vado al mio lavoro part-time",
+              "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "lavoro"
+            },
+            {
+              "testo": "Vado a fare compere",
+              "conseguenza": "Ti prepari per andare a fare shopping",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "negozi"
+            },
+            {
+              "testo": "Ti organizzi per uscire",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
+            },
+            {
+              "testo": "Passi il tempo con la famiglia",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Nel pomeriggio, con una luce che ricorda lo schermo di un computer acceso, arrivi all’ingresso di casa, pronto a scegliere il prossimo “livello” della tua giornata. Le possibilità sono diverse: aggiornare il guardaroba con una sessione di compere, proseguire con il lavoro part-time, immergerti nello studio per scoprire nuove conoscenze o uscire per socializzare e scambiare idee. Ogni opzione è un codice da decifrare.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Rimani a studiare",
+              "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extraMechanic": "studio_materia"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "Vado al mio lavoro part-time",
+              "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "lavoro"
+            },
+            {
+              "testo": "Vado a fare compere",
+              "conseguenza": "Ti prepari per andare a fare shopping",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "negozi"
+            },
+            {
+              "testo": "Ti organizzi per uscire",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
+            },
+            {
+              "testo": "Passi il tempo con la famiglia",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
             }
           ]
         }
       },
       "femmina": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Con la luce calda del pomeriggio che ti accarezza, arrivi all’ingresso di casa e senti il richiamo di tante possibilità. Potresti concederti un po’ di shopping per rinnovare il look, metterti in azione con il lavoro part-time, immergerti nello studio o lasciarti andare a piacevoli momenti di socializzazione. Ogni scelta promette una nuova avventura.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Rimani a studiare",
+              "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extraMechanic": "studio_materia"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "Vado al mio lavoro part-time",
+              "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "lavoro"
+            },
+            {
+              "testo": "Vado a fare compere",
+              "conseguenza": "Ti prepari per andare a fare shopping",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "negozi"
+            },
+            {
+              "testo": "Ti organizzi per uscire",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
+            },
+            {
+              "testo": "Passi il tempo con la famiglia",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "In un pomeriggio che sfuma tra ombre e luci fioche, arrivi all’ingresso di casa con il cuore in tumulto. Le possibilità si aprono come un ventaglio di emozioni: un’escursione tra negozi dall’atmosfera enigmatica, il dovere del lavoro part-time, il silenzio studioso dei libri o l’intensità di conversazioni che risvegliano l’anima. La scelta sarà il tuo rito personale.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Rimani a studiare",
+              "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extraMechanic": "studio_materia"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "Vado al mio lavoro part-time",
+              "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "lavoro"
+            },
+            {
+              "testo": "Vado a fare compere",
+              "conseguenza": "Ti prepari per andare a fare shopping",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "negozi"
+            },
+            {
+              "testo": "Ti organizzi per uscire",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
+            },
+            {
+              "testo": "Passi il tempo con la famiglia",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Il pomeriggio vibra di energia e adrenalina mentre arrivi all’ingresso di casa. Davanti a te, il mondo si presenta come un palco: un’uscita per fare shopping e trovare l’outfit perfetto, il richiamo del lavoro part-time, l’opportunità di studiare e perfezionare il tuo talento o la voglia di socializzare per sentire il battito della vita. La decisione di oggi segnerà il ritmo della tua giornata.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Rimani a studiare",
+              "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extraMechanic": "studio_materia"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "Vado al mio lavoro part-time",
+              "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "lavoro"
+            },
+            {
+              "testo": "Vado a fare compere",
+              "conseguenza": "Ti prepari per andare a fare shopping",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "negozi"
+            },
+            {
+              "testo": "Ti organizzi per uscire",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
+            },
+            {
+              "testo": "Passi il tempo con la famiglia",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Con la calma di un pomeriggio studiato nei minimi dettagli, ti trovi all’ingresso di casa e ponderi le opzioni che ti attendono. Forse oggi potrai fare compere per scoprire gadget e novità, affrontare il lavoro part-time per affinare le tue competenze, dedicarti allo studio per espandere il tuo sapere oppure socializzare per confrontarti con menti affini. La scelta, come in un algoritmo ben strutturato, ti condurrà verso una nuova scoperta.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Rimani a studiare",
+              "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extraMechanic": "studio_materia"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "Vado al mio lavoro part-time",
+              "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "lavoro"
+            },
+            {
+              "testo": "Vado a fare compere",
+              "conseguenza": "Ti prepari per andare a fare shopping",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "negozi"
+            },
+            {
+              "testo": "Ti organizzi per uscire",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
+            },
+            {
+              "testo": "Passi il tempo con la famiglia",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 },
+              "extraMechanic": "socialita"
             }
           ]
         }
@@ -1074,358 +1070,224 @@
 
 
     "sera": {
+      "petEvent":"pet_sera",
+      "extraEvent": "sera_social",
       "maschio": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "La notte scende e le luci della città invitano al movimento. Davanti a te si apre un ventaglio di scelte: uscire per vivere l’adrenalina della strada, accoccolarti con la famiglia davanti a un film che scalda il cuore, inviare un messaggio per rimanere in contatto o lasciarti trasportare dalla sfida dei videogiochi. Il tuo spirito libero sa già quale strada prendere.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Esci",
+              "conseguenza": "Ti prepari per andare al club",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extaMechanic":"social_serale"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "guardi un film con la famiglia",
+              "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
+              "modificheStatistiche": { "status": -1 }
+            },
+            {
+              "testo": "messaggi un contatto",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "socialita_messaggi"
+            },
+            {
+              "testo": "rimani a casa a giocare",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 }
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Nel silenzio profondo della notte, dove ombre e luci si fondono in un enigma, il bivio si presenta con toni cupi. Potresti uscire e abbracciare la solitudine notturna, lasciarti cullare dal calore familiare durante un film, inviare un messaggio carico di mistero o rifugiarti nel mondo oscuro dei videogiochi. Ogni scelta parla alla tua anima tormentata.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Esci",
+              "conseguenza": "Ti prepari per andare al club",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extaMechanic":"social_serale"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "guardi un film con la famiglia",
+              "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
+              "modificheStatistiche": { "status": -1 }
+            },
+            {
+              "testo": "messaggi un contatto",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "socialita_messaggi"
+            },
+            {
+              "testo": "rimani a casa a giocare",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 }
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Quando la notte scende, il ritmo pulsante del metal risuona in ogni angolo. Di fronte a te, le opzioni esplodono come un assolo di chitarra: uscire per sentire l’energia della strada, condividere un film in famiglia per un attimo di pace, mandare un messaggio che scuote la routine o immergerti nel vortice dei videogiochi, dove ogni sfida è un riff epico. La tua serata sarà un concerto di scelte.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Esci",
+              "conseguenza": "Ti prepari per andare al club",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extaMechanic":"social_serale"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "guardi un film con la famiglia",
+              "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
+              "modificheStatistiche": { "status": -1 }
+            },
+            {
+              "testo": "messaggi un contatto",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "socialita_messaggi"
+            },
+            {
+              "testo": "rimani a casa a giocare",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 }
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Con l’arrivo della sera, il mondo si trasforma in un intricato puzzle da decifrare. Le scelte sono chiare e stimolanti: uscire per raccogliere nuove esperienze, rilassarti con un film in famiglia per ricaricare le energie, messaggiare un contatto per scambiare idee o approfondire le tue abilità nei videogiochi. Ogni opzione è un codice da risolvere con precisione e curiosità.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Esci",
+              "conseguenza": "Ti prepari per andare al club",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extaMechanic":"social_serale"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "guardi un film con la famiglia",
+              "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
+              "modificheStatistiche": { "status": -1 }
+            },
+            {
+              "testo": "messaggi un contatto",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "socialita_messaggi"
+            },
+            {
+              "testo": "rimani a casa a giocare",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 }
             }
           ]
         }
       },
       "femmina": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Quando il crepuscolo si trasforma in notte, il mondo sembra sussurrare nuove avventure. Puoi scegliere di uscire e farti sorprendere dall’inaspettato, di ritrovarti in famiglia per un film che regala emozioni, di messaggiare un contatto che risveglia ricordi o di immergerti nel virtuale dei videogiochi. Ogni opzione rispecchia la tua passione e determinazione.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Esci",
+              "conseguenza": "Ti prepari per andare al club",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extaMechanic":"social_serale"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "guardi un film con la famiglia",
+              "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
+              "modificheStatistiche": { "status": -1 }
+            },
+            {
+              "testo": "messaggi un contatto",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "socialita_messaggi"
+            },
+            {
+              "testo": "rimani a casa a giocare",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 }
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "La sera arriva con un velo di malinconica bellezza, e il mondo intorno a te diventa un palcoscenico di emozioni. Davanti a te, la via dell’uscita offre la promessa di una notte enigmatica, un film in famiglia svela frammenti di luce tra le ombre, un messaggio a un contatto evoca segreti, oppure i videogiochi ti chiamano nel loro regno solitario. La tua scelta sarà un atto di poesia oscura.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Esci",
+              "conseguenza": "Ti prepari per andare al club",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extaMechanic":"social_serale"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "guardi un film con la famiglia",
+              "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
+              "modificheStatistiche": { "status": -1 }
+            },
+            {
+              "testo": "messaggi un contatto",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "socialita_messaggi"
+            },
+            {
+              "testo": "rimani a casa a giocare",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 }
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "La notte si accende di luci e suoni, e il mondo diventa il tuo palcoscenico. Puoi uscire per fondere il tuo spirito ribelle con il clamore esterno, abbracciare un film in famiglia come pausa ritmica, messaggiare un contatto per condividere la tua energia o restare a giocare ai videogiochi, dove ogni livello è un nuovo inno alla vita. Ogni opzione è un verso nel tuo inno personale.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Esci",
+              "conseguenza": "Ti prepari per andare al club",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extaMechanic":"social_serale"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "guardi un film con la famiglia",
+              "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
+              "modificheStatistiche": { "status": -1 }
+            },
+            {
+              "testo": "messaggi un contatto",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "socialita_messaggi"
+            },
+            {
+              "testo": "rimani a casa a giocare",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 }
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "La serata si apre come un nuovo capitolo pieno di possibilità da analizzare e scoprire. Puoi decidere di uscire per osservare il mondo con occhi attenti, condividere un film in famiglia che offre momenti di intimità, inviare un messaggio per discutere nuove teorie o tuffarti nei videogiochi per risolvere sfide complesse. La tua scelta sarà un esperimento che unisce cuore e mente.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "testo": "Esci",
+              "conseguenza": "Ti prepari per andare al club",
               "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "extaMechanic":"social_serale"
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
+              "testo": "guardi un film con la famiglia",
+              "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
+              "modificheStatistiche": { "status": -1 }
+            },
+            {
+              "testo": "messaggi un contatto",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
               "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "extraMechanic": "socialita_messaggi"
+            },
+            {
+              "testo": "rimani a casa a giocare",
+              "conseguenza": "Ti prepari per uscire con qualcuno",
+              "modificheStatistiche": { "status": -1 }
             }
           ]
         }
@@ -1433,358 +1295,191 @@
     },
 
     "notte": {
+      "petEvent":"pet_notte",
       "maschio": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "La notte è scesa e la tua stanza è avvolta in un silenzio che invita al riposo. Tuttavia, l’adrenalina di una sfida videoludica continua a chiamarti. Cedi al sonno o lasciati trasportare dall’emozione di una lunga sessione di gioco?",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
+              "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "modificheStatistiche": { "intelligenza": 1 }
+              
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "uscita di soppiatto",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
+            },
+            {
+              "testo": "rimani alzato per giocare ai videogiochi",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Nella quiete oscura della notte, l’oscurità sembra sussurrare segreti. Il sonno si offre come una tregua poetica, ma l’eco del gioco ti spinge a sfidare l’abisso fino all’alba. Resterai avvolto dalle tenebre del riposo o ti perderai nel gioco notturno?",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
+              "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "modificheStatistiche": { "intelligenza": 1 }
+              
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "uscita di soppiatto",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
+            },
+            {
+              "testo": "rimani alzato per giocare ai videogiochi",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "La notte scende come un assolo di chitarra, vibrante e carica di energia. Il richiamo del riposo si scontra con l’adrenalina di una sessione di gioco intensa. È il momento di decidere: lasciarti cullare dal sonno o scatenare il metal fino a tardi?",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
+              "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "modificheStatistiche": { "intelligenza": 1 }
+              
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "uscita di soppiatto",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
+            },
+            {
+              "testo": "rimani alzato per giocare ai videogiochi",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "La notte si apre come un enigma da risolvere, con il sonno che offre la logica di un reset ben calibrato. Oppure, la curiosità per una lunga sessione di videogiochi ti spinge a esplorare nuove strategie fino all’alba. Qual è la tua mossa finale per concludere il giorno?",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
+              "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "modificheStatistiche": { "intelligenza": 1 }
+              
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "uscita di soppiatto",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
+            },
+            {
+              "testo": "rimani alzato per giocare ai videogiochi",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
             }
           ]
         }
       },
       "femmina": {
         "tabboz": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Con le luci che si attenuano e il sonno che si fa dolce promessa, senti un impulso contrastante: restare sveglia a giocare e vivere ogni istante o abbracciare il riposo rigenerante. Quale scelta darà il ritmo alla tua notte?",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
+              "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "modificheStatistiche": { "intelligenza": 1 }
+              
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "uscita di soppiatto",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
+            },
+            {
+              "testo": "rimani alzato per giocare ai videogiochi",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
             }
           ]
         },
         "goth": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Avvolta in un manto di malinconia, la notte ti invita a un riposo silenzioso, quasi come un addio alla luce. Tuttavia, l’invito a immergerti in un viaggio videoludico ti seduce con la sua promessa di eternità. Sceglierai la quiete del sonno o l’intensità di una veglia creativa?",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
+              "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "modificheStatistiche": { "intelligenza": 1 }
+              
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "uscita di soppiatto",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
+            },
+            {
+              "testo": "rimani alzato per giocare ai videogiochi",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
             }
           ]
         },
         "metallaro": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Quando il buio cala, il tuo spirito ribelle si trova a un bivio: il dolce riposo del sonno o l’impeto di una notte dedicata al gioco, dove ogni sfida è un inno alla vita. Lascia che il ritmo della tua passione decida il corso della serata.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
+              "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "modificheStatistiche": { "intelligenza": 1 }
+              
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "uscita di soppiatto",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
+            },
+            {
+              "testo": "rimani alzato per giocare ai videogiochi",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
             }
           ]
         },
         "nerd": {
-          "testo": "È ora di decidere cosa fare questa mattina.",
+          "testo": "Sotto il silenzio notturno, la scelta si trasforma in un problema da analizzare: il sonno, con il suo potere rigenerante, oppure una maratona di gioco che stimola la mente e l’ingegno. Decidi se cedere al riposo o restare sveglia a decifrare nuove sfide.",
           "scelte": [
             {
-              "testo": "Vai a scuola.",
+              "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Segui attentamente le lezioni.",
-                  "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 2 }
-                },
-                {
-                  "testo": "Passi il tempo a disegnare sul quaderno.",
-                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
-                }
-              ]
+              "modificheStatistiche": { "intelligenza": 1 }
+              
             },
             {
-              "testo": "Bigi la scuola.",
-              "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
-              "scelteSecondarie": [
-                {
-                  "testo": "Vai al parco a rilassarti.",
-                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 }
-                },
-                {
-                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
-                  "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 }
-                },
-                {
-                  "testo": "Vai in centro a incontrare amici.",
-                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
-                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
-                }
-              ]
+              "testo": "uscita di soppiatto",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
+            },
+            {
+              "testo": "rimani alzato per giocare ai videogiochi",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "extraMechanic": "uscita_notturna"
             }
           ]
         }
