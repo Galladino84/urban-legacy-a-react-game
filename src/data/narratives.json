@@ -1,0 +1,39 @@
+{
+    "risveglio": {
+      "maschio": {
+        "tabboz": {
+          "testo": "Ti svegli con la musica a tutto volume.",
+          "scelte": [
+            {
+              "testo": "Spegni subito la sveglia.",
+              "conseguenza": "Ti senti leggermente più energico.",
+              "modificheStatistiche": { "status": 1 }
+            },
+            {
+              "testo": "Ignora la sveglia e dormi ancora.",
+              "conseguenza": "Ti svegli in ritardo ma riposato.",
+              "modificheStatistiche": { "status": -1 }
+            }
+          ]
+        }
+      },
+      "femmina": {
+        "goth": {
+          "testo": "Il tuo gatto ti osserva dalla poltrona.",
+          "scelte": [
+            {
+              "testo": "Accarezzi il gatto.",
+              "conseguenza": "Il gatto fa le fusa e ti senti meglio.",
+              "modificheStatistiche": { "carisma": 1 }
+            },
+            {
+              "testo": "Lo ignori e ti prepari.",
+              "conseguenza": "Il gatto ti guarda male.",
+              "modificheStatistiche": { "intelligenza": -1, "status": 1 }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

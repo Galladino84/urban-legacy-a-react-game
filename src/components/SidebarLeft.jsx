@@ -13,13 +13,15 @@ function SidebarLeft() {
   const placeholderLogo = `src/assets/logos/placeholder.png`;
   const placeholderMirror = `src/assets/mirrors/mirror_placeholder.png`;
 
-  // 🛑 Funzione aggiornata per resettare tutto
   const handleReset = () => {
+    // Rimuove i dati salvati relativi al personaggio e resetta i progressi
     localStorage.removeItem("personaggio");
-    localStorage.removeItem("giorno"); // Rimuove il salvataggio del giorno
-    localStorage.removeItem("fase");   // Rimuove il salvataggio della fase
-    localStorage.removeItem("data");   // Rimuove la data corrente
-    window.location.href = "/"; // Torna alla schermata di creazione personaggio
+    localStorage.setItem("giorno", "1");
+    localStorage.setItem("fase", "0");
+    localStorage.setItem("data", "2024-06-24T00:00:00.000Z");
+
+    // Ricarica la pagina per riportare tutto allo stato iniziale
+    window.location.href = "/";
   };
 
   // Genera le stelle per lo status

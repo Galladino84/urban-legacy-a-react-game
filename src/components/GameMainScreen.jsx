@@ -1,33 +1,15 @@
 import React, { useEffect, useState } from "react";
 import SidebarLeft from "./SidebarLeft";
 import SidebarRight from "./SidebarRight";
+import NarrativeScene from "./NarrativeScene";
 
-const fasiGiornata = [
-  "Inizio Giornata",
-  "Risveglio",
-  "Mattina Presto",
-  "Mattina",
-  "Pomeriggio",
-  "Sera",
-  "Notte"
-];
+const fasiGiornata = ["Risveglio", "Mattina Presto", "Mattina", "Pomeriggio", "Sera", "Notte"];
 
 function GameMainScreen() {
   const [personaggio, setPersonaggio] = useState(null);
-
-  // Carica giorno, fase e data da localStorage o imposta valori predefiniti
-  const [giorno, setGiorno] = useState(() => {
-    return Number(localStorage.getItem("giorno")) || 1;
-  });
-
-  const [fase, setFase] = useState(() => {
-    return Number(localStorage.getItem("fase")) || 0;
-  });
-
-  const [data, setData] = useState(() => {
-    const savedDate = localStorage.getItem("data");
-    return savedDate ? new Date(savedDate) : new Date(2024, 5, 24); // 24 Giugno 2024
-  });
+  const [giorno, setGiorno] = useState(() => Number(localStorage.getItem("giorno")) || 1);
+  const [fase, setFase] = useState(() => Number(localStorage.getItem("fase")) || 0);
+  const [data, setData] = useState(() => new Date(localStorage.getItem("data") || "2024-06-24"));
 
   useEffect(() => {
     const datiSalvati = localStorage.getItem("personaggio");
@@ -38,7 +20,6 @@ function GameMainScreen() {
     }
   }, []);
 
-  // Salva automaticamente giorno, fase e data ogni volta che cambiano
   useEffect(() => {
     localStorage.setItem("giorno", giorno.toString());
     localStorage.setItem("fase", fase.toString());
@@ -49,55 +30,43 @@ function GameMainScreen() {
     if (fase < fasiGiornata.length - 1) {
       setFase((prev) => prev + 1);
     } else {
-      setFase(0); // Resetta la fase
-      setGiorno((prev) => prev + 1); // Avanza il giorno
-      setData((prevDate) => new Date(prevDate.setDate(prevDate.getDate() + 1))); // Avanza la data
+      setFase(0); // Reset delle fasi
+      setGiorno((prev) => prev + 1);
+      setData((prev) => {
+        const nuovaData = new Date(prev);
+        nuovaData.setDate(nuovaData.getDate() + 1);
+        return nuovaData;
+      });
     }
   };
 
-  if (!personaggio) return <p>Caricamento...</p>;
+  const formattaGiornoSettimana = (data) =>
+    data.toLocaleDateString("it-IT", { weekday: "long" }).replace(/^\w/, (c) => c.toUpperCase());
 
   const formattaData = (data) =>
-    data.toLocaleDateString("it-IT", {
-      weekday: "long",
-      day: "numeric",
-      month: "long",
-      year: "numeric"
-    });
+    data.toLocaleDateString("it-IT", { day: "numeric", month: "long", year: "numeric" });
+
+  if (!personaggio) return <p>Caricamento...</p>;
 
   return (
-    <div
-      className={`game-container theme_${personaggio.percorso.toLowerCase()} theme_${personaggio.percorso.toLowerCase()}_${personaggio.sesso.toLowerCase()}`}
-    >
+    <div className={`game-container theme_${personaggio.percorso.toLowerCase()} theme_${personaggio.percorso.toLowerCase()}_${personaggio.sesso.toLowerCase()}`}>
       <SidebarLeft />
-
       <main className="main-content">
-        {/* Header */}
         <header className="game-header">
           <div className="header-content">
             <span><strong>Giorno:</strong> {giorno}</span>
-            <span><strong>Data:</strong> {formattaData(data)}</span>
+            <span><strong>Data:</strong> {formattaGiornoSettimana(data)}, {formattaData(data)}</span>
             <span><strong>Fase:</strong> {fasiGiornata[fase]}</span>
           </div>
         </header>
-
-        <h2>Benvenuto, {personaggio.nome}!</h2>
-        <p><strong>Percorso:</strong> {personaggio.percorso}</p>
-        <p><strong>Sesso:</strong> {personaggio.sesso}</p>
-        <p><strong>Orientamento:</strong> {personaggio.orientamento}</p>
-        <p>
-          <strong>Famiglia:</strong>{" "}
-          {personaggio.famiglia.mamma ? "Mamma " : ""}
-          {personaggio.famiglia.sorella ? "Sorella " : ""}
-          {personaggio.famiglia.papà ? "Papà " : ""}
-          {personaggio.famiglia.fratello ? "Fratello" : ""}
-        </p>
-
-        <button className="btn btn-primary mt-4" onClick={avanzaFase}>
-          Avanza Fase ({fasiGiornata[fase]})
-        </button>
+        
+        <NarrativeScene
+          fase={fasiGiornata[fase].toLowerCase().replace(" ", "_")}
+          personaggio={personaggio}
+          avanzaFase={avanzaFase}
+          aggiornaPersonaggio={setPersonaggio}
+        />
       </main>
-
       <SidebarRight />
     </div>
   );
