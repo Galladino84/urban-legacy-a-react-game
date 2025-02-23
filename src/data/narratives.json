@@ -29,7 +29,7 @@
             {
               "testo": "Lo ignori e ti prepari.",
               "conseguenza": "Il gatto ti guarda male.",
-              "modificheStatistiche": { "intelligenza": -1, "status": 1 }
+              "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
             }
           ]
         }

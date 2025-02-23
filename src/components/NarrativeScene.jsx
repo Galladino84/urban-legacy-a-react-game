@@ -31,14 +31,18 @@ function NarrativeScene({ fase, personaggio, avanzaFase }) {
     const nuovoPersonaggio = { ...personaggio };
   
     Object.entries(modifiche).forEach(([stat, valore]) => {
-      const valoreAttuale = nuovoPersonaggio.statistiche[stat] || 0;
+      const valoreAttuale = nuovoPersonaggio.statistiche[stat] ?? 0;
       let nuovoValore = valoreAttuale + valore;
   
-      // Limiti specifici per le statistiche
       if (stat === "status") {
-        nuovoValore = Math.max(0, Math.min(nuovoValore, 5)); // Status tra 0 e 5
+        // Limita lo status tra 0 e 5
+        nuovoValore = Math.max(0, Math.min(nuovoValore, 5));
+      } else if (stat === "soldi") {
+        // Soldi non può andare sotto zero
+        nuovoValore = Math.max(0, nuovoValore);
       } else {
-        nuovoValore = Math.max(0, nuovoValore); // Altre statistiche non possono essere negative
+        // Altre statistiche min 0 (niente valori negativi)
+        nuovoValore = Math.max(0, nuovoValore);
       }
   
       nuovoPersonaggio.statistiche[stat] = nuovoValore;
@@ -46,6 +50,7 @@ function NarrativeScene({ fase, personaggio, avanzaFase }) {
   
     localStorage.setItem("personaggio", JSON.stringify(nuovoPersonaggio));
   };
+  
   
 
   const gestisciScelta = (scelta) => {
