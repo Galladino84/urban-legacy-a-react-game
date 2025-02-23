@@ -1,7 +1,23 @@
 {
     "risveglio": {
       "extraEvent": "bagno_famiglia",
-      "petEvent": "pet_risveglio",
+      "petEvent": {
+        "testo": "Il tuo gatto è nel letto al tuo fianco e alza la testa appena si rende conto che ti stai svegliando",
+        "scelte": [
+          {
+            "testo": "accarezzi il tuo gatto",
+            "conseguenza": "il tuo gatto socchiude gli occhi felice ti guarda e miagola",
+            "sound": "miao",
+            "modificheStatistiche" : { "affinita_pet": 2 }
+          },
+          {
+            "testo": "lo ignori",
+            "conseguenza": "il tuo gatto abbassa la testa e torna a dormire",
+            "sound": "miao",
+            "modificheStatistiche" : { "affinita_pet": 0 }
+          }
+        ]
+      },
       "maschio": {
         "tabboz": {
           "testo": "Questa mattina la sveglia è suonata a tutto volume con la tua musica techno preferita. Ti alzi e, stropicciandoti gli occhi, ti dirigi verso il bagno, pronto a iniziare la giornata con energia e ritmo.",
@@ -9,18 +25,18 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
             },
             {
               "testo": "Doccia breve",
               "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
-              "modificheStatistiche": { "carisma": 0 }
+              "modificheStatistiche": { "carisma": 0, "stamina": 0 }
               
             },
             {
               "testo": "Per oggi salti",
               "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
-              "modificheStatistiche": { "carisma": -1 }
+              "modificheStatistiche": { "carisma": -1, "stamina": -1 }
               
             }
           ]
@@ -31,18 +47,18 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
             },
             {
               "testo": "Doccia breve",
               "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
-              "modificheStatistiche": { "carisma": 0 }
+              "modificheStatistiche": { "carisma": 0, "stamina": 0 }
               
             },
             {
               "testo": "Per oggi salti",
               "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
-              "modificheStatistiche": { "carisma": -1 }
+              "modificheStatistiche": { "carisma": -1, "stamina": -1 }
               
             }
           ]
@@ -53,18 +69,18 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
             },
             {
               "testo": "Doccia breve",
               "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
-              "modificheStatistiche": { "carisma": 0 }
+              "modificheStatistiche": { "carisma": 0, "stamina": 0 }
               
             },
             {
               "testo": "Per oggi salti",
               "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
-              "modificheStatistiche": { "carisma": -1 }
+              "modificheStatistiche": { "carisma": -1, "stamina": -1 }
               
             }
           ]
@@ -75,18 +91,18 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
             },
             {
               "testo": "Doccia breve",
               "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
-              "modificheStatistiche": { "carisma": 0 }
+              "modificheStatistiche": { "carisma": 0, "stamina": 0 }
               
             },
             {
               "testo": "Per oggi salti",
               "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
-              "modificheStatistiche": { "carisma": -1 }
+              "modificheStatistiche": { "carisma": -1, "stamina": -1 }
               
             }
           ]
@@ -99,18 +115,18 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
             },
             {
               "testo": "Doccia breve",
               "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
-              "modificheStatistiche": { "carisma": 0 }
+              "modificheStatistiche": { "carisma": 0, "stamina": 0 }
               
             },
             {
               "testo": "Per oggi salti",
               "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
-              "modificheStatistiche": { "carisma": -1 }
+              "modificheStatistiche": { "carisma": -1, "stamina": -1 }
               
             }
           ]
@@ -121,18 +137,18 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
             },
             {
               "testo": "Doccia breve",
               "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
-              "modificheStatistiche": { "carisma": 0 }
+              "modificheStatistiche": { "carisma": 0, "stamina": 0 }
               
             },
             {
               "testo": "Per oggi salti",
               "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
-              "modificheStatistiche": { "carisma": -1 }
+              "modificheStatistiche": { "carisma": -1, "stamina": -1 }
               
             }
           ]
@@ -143,18 +159,18 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
             },
             {
               "testo": "Doccia breve",
               "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
-              "modificheStatistiche": { "carisma": 0 }
+              "modificheStatistiche": { "carisma": 0, "stamina": 0 }
               
             },
             {
               "testo": "Per oggi salti",
               "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
-              "modificheStatistiche": { "carisma": -1 }
+              "modificheStatistiche": { "carisma": -1, "stamina": -1 }
               
             }
           ]
@@ -165,18 +181,18 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
             },
             {
               "testo": "Doccia breve",
               "conseguenza": "Sei ancora palesemente addormentato e decidi di darti una sciacquata veloce",
-              "modificheStatistiche": { "carisma": 0 }
+              "modificheStatistiche": { "carisma": 0, "stamina": 0 }
               
             },
             {
               "testo": "Per oggi salti",
               "conseguenza": "Sei ancora palesemente addormentato e ti dirigi direttamente in cucina",
-              "modificheStatistiche": { "carisma": -1 }
+              "modificheStatistiche": { "carisma": -1, "stamina": -1 }
               
             }
           ]
@@ -187,7 +203,23 @@
 
     "mattina_presto": {
       "extraEvent": "colazione_famiglia",
-      "petEvent": "pet_mattina_presto",
+      "petEvent": {
+        "testo": "Scendendo le scale e arrivando in cucina noti il gatto che sta entrando alza la testa e ti guarda",
+        "scelte": [
+          {
+            "testo": "dai i croccantini al tuo gatto",
+            "conseguenza": "il tuo gatto si mette a mangiare felice",
+            "sound": "miao",
+            "modificheStatistiche" : { "affinita_pet": 2 }
+          },
+          {
+            "testo": "lo ignori",
+            "conseguenza": "il tuo gatto abbassa la testa e cambia stanza",
+            "sound": "miao",
+            "modificheStatistiche" : { "affinita_pet": -1 }
+          }
+        ]
+      },
       "maschio": {
         "tabboz": {
           "testo": "Appena vestito, trovi la tua famiglia già intenti a preparare la colazione nella cucina inondata di luce. Mentre il profumo del caffè e delle torte ti accoglie, ti fermi un attimo a riflettere: unirti al calore domestico o uscire di casa, salutandoli con un cenno deciso, per affrontare la giornata con la tua solita grinta?",
@@ -195,18 +227,18 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "Fai colazione da solo",
               "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             },
             {
               "testo": "Salti la colazione",
               "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             }
           ]
@@ -217,18 +249,18 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "Fai colazione da solo",
               "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             },
             {
               "testo": "Salti la colazione",
               "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             }
           ]
@@ -239,18 +271,18 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "Fai colazione da solo",
               "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             },
             {
               "testo": "Salti la colazione",
               "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             }
           ]
@@ -261,18 +293,18 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "Fai colazione da solo",
               "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             },
             {
               "testo": "Salti la colazione",
               "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             }
           ]
@@ -285,18 +317,18 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "Fai colazione da solo",
               "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             },
             {
               "testo": "Salti la colazione",
               "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             }
           ]
@@ -307,18 +339,18 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "Fai colazione da solo",
               "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             },
             {
               "testo": "Salti la colazione",
               "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             }
           ]
@@ -329,18 +361,18 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "Fai colazione da solo",
               "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             },
             {
               "testo": "Salti la colazione",
               "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             }
           ]
@@ -351,18 +383,18 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "Fai colazione da solo",
               "conseguenza": "prendi al volo qualcosa dal tavolo che mangi mentre ti avvii per andare a scuola dopo aver salutato i tuoi",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             },
             {
               "testo": "Salti la colazione",
               "conseguenza": "Non hai molta fame. Decidi di saltare la colazione e uscire di casa in tutta fretta",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "stamina": -1 }
             
             }
           ]
@@ -386,12 +418,12 @@
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 1 }
+                  "modificheStatistiche": { "intelligenza": 2, "stamina": -1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
                   "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
+                  "modificheStatistiche": { "carisma": 1, "stamina": -1 }
                 }
               ]
             },
@@ -403,13 +435,13 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 },
+                  "modificheStatistiche": { "stamina": 2, "affinità_famiglia": -1 },
                   "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 },
+                  "modificheStatistiche": { "soldi": 25, "stamina": -1 },
                   "extraMechanic": "lavoro"
                 },
                 {
@@ -436,12 +468,12 @@
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 1 }
+                  "modificheStatistiche": { "intelligenza": 2, "stamina": -1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
                   "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
+                  "modificheStatistiche": { "carisma": 1, "stamina": -1 }
                 }
               ]
             },
@@ -453,13 +485,13 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 },
+                  "modificheStatistiche": { "stamina": 2, "affinità_famiglia": -1 },
                   "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 },
+                  "modificheStatistiche": { "soldi": 25, "stamina": -1 },
                   "extraMechanic": "lavoro"
                 },
                 {
@@ -486,12 +518,12 @@
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 1 }
+                  "modificheStatistiche": { "intelligenza": 2, "stamina": -1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
                   "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
+                  "modificheStatistiche": { "carisma": 1, "stamina": -1 }
                 }
               ]
             },
@@ -503,13 +535,13 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 },
+                  "modificheStatistiche": { "stamina": 2, "affinità_famiglia": -1 },
                   "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 },
+                  "modificheStatistiche": { "soldi": 25, "stamina": -1 },
                   "extraMechanic": "lavoro"
                 },
                 {
@@ -536,12 +568,12 @@
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 1 }
+                  "modificheStatistiche": { "intelligenza": 2, "stamina": -1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
                   "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
+                  "modificheStatistiche": { "carisma": 1, "stamina": -1 }
                 }
               ]
             },
@@ -553,13 +585,13 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 },
+                  "modificheStatistiche": { "stamina": 2, "affinità_famiglia": -1 },
                   "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 },
+                  "modificheStatistiche": { "soldi": 25, "stamina": -1 },
                   "extraMechanic": "lavoro"
                 },
                 {
@@ -588,12 +620,12 @@
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 1 }
+                  "modificheStatistiche": { "intelligenza": 2, "stamina": -1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
                   "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
+                  "modificheStatistiche": { "carisma": 1, "stamina": -1 }
                 }
               ]
             },
@@ -605,13 +637,13 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 },
+                  "modificheStatistiche": { "stamina": 2, "affinità_famiglia": -1 },
                   "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 },
+                  "modificheStatistiche": { "soldi": 25, "stamina": -1 },
                   "extraMechanic": "lavoro"
                 },
                 {
@@ -638,12 +670,12 @@
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 1 }
+                  "modificheStatistiche": { "intelligenza": 2, "stamina": -1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
                   "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
+                  "modificheStatistiche": { "carisma": 1, "stamina": -1 }
                 }
               ]
             },
@@ -655,13 +687,13 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 },
+                  "modificheStatistiche": { "stamina": 2, "affinità_famiglia": -1 },
                   "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 },
+                  "modificheStatistiche": { "soldi": 25, "stamina": -1 },
                   "extraMechanic": "lavoro"
                 },
                 {
@@ -688,12 +720,12 @@
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 1 }
+                  "modificheStatistiche": { "intelligenza": 2, "stamina": -1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
                   "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
+                  "modificheStatistiche": { "carisma": 1, "stamina": -1 }
                 }
               ]
             },
@@ -705,13 +737,13 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 },
+                  "modificheStatistiche": { "stamina": 2, "affinità_famiglia": -1 },
                   "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 },
+                  "modificheStatistiche": { "soldi": 25, "stamina": -1 },
                   "extraMechanic": "lavoro"
                 },
                 {
@@ -738,12 +770,12 @@
                 {
                   "testo": "Segui attentamente le lezioni.",
                   "conseguenza": "Impari nuove nozioni utili.",
-                  "modificheStatistiche": { "intelligenza": 1 }
+                  "modificheStatistiche": { "intelligenza": 2, "stamina": -1 }
                 },
                 {
                   "testo": "Passi il tempo a disegnare sul quaderno.",
                   "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
-                  "modificheStatistiche": { "carisma": 1 }
+                  "modificheStatistiche": { "carisma": 1, "stamina": -1 }
                 }
               ]
             },
@@ -755,13 +787,13 @@
                 {
                   "testo": "Vai al parco a rilassarti.",
                   "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
-                  "modificheStatistiche": { "status": 1 },
+                  "modificheStatistiche": { "stamina": 2, "affinità_famiglia": -1 },
                   "extraEvent": "bigio_parco"
                 },
                 {
                   "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
                   "conseguenza": "Guadagni qualche soldo extra.",
-                  "modificheStatistiche": { "soldi": 20 },
+                  "modificheStatistiche": { "soldi": 25, "stamina": -1 },
                   "extraMechanic": "lavoro"
                 },
                 {
@@ -789,32 +821,32 @@
             {
               "testo": "Rimani a studiare",
               "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -2 },
               "extraMechanic": "studio_materia"
             },
             {
               "testo": "Vado al mio lavoro part-time",
               "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "soldi": 30, "stamina": -3 },
               "extraMechanic": "lavoro"
             },
             {
               "testo": "Vado a fare compere",
               "conseguenza": "Ti prepari per andare a fare shopping",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "negozi"
             },
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "sstamina": -1 },
               "extraMechanic": "socialita"
             },
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
-              "extraMechanic": "socialita"
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+
             }
           ]
         },
@@ -824,32 +856,32 @@
             {
               "testo": "Rimani a studiare",
               "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -2 },
               "extraMechanic": "studio_materia"
             },
             {
               "testo": "Vado al mio lavoro part-time",
               "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "soldi": 30, "stamina": -3 },
               "extraMechanic": "lavoro"
             },
             {
               "testo": "Vado a fare compere",
               "conseguenza": "Ti prepari per andare a fare shopping",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "negozi"
             },
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "sstamina": -1 },
               "extraMechanic": "socialita"
             },
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
-              "extraMechanic": "socialita"
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+
             }
           ]
         },
@@ -859,32 +891,32 @@
             {
               "testo": "Rimani a studiare",
               "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -2 },
               "extraMechanic": "studio_materia"
             },
             {
               "testo": "Vado al mio lavoro part-time",
               "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "soldi": 30, "stamina": -3 },
               "extraMechanic": "lavoro"
             },
             {
               "testo": "Vado a fare compere",
               "conseguenza": "Ti prepari per andare a fare shopping",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "negozi"
             },
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "sstamina": -1 },
               "extraMechanic": "socialita"
             },
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
-              "extraMechanic": "socialita"
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+
             }
           ]
         },
@@ -894,32 +926,32 @@
             {
               "testo": "Rimani a studiare",
               "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -2 },
               "extraMechanic": "studio_materia"
             },
             {
               "testo": "Vado al mio lavoro part-time",
               "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "soldi": 30, "stamina": -3 },
               "extraMechanic": "lavoro"
             },
             {
               "testo": "Vado a fare compere",
               "conseguenza": "Ti prepari per andare a fare shopping",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "negozi"
             },
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "sstamina": -1 },
               "extraMechanic": "socialita"
             },
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
-              "extraMechanic": "socialita"
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+
             }
           ]
         }
@@ -931,32 +963,32 @@
             {
               "testo": "Rimani a studiare",
               "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -2 },
               "extraMechanic": "studio_materia"
             },
             {
               "testo": "Vado al mio lavoro part-time",
               "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "soldi": 30, "stamina": -3 },
               "extraMechanic": "lavoro"
             },
             {
               "testo": "Vado a fare compere",
               "conseguenza": "Ti prepari per andare a fare shopping",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "negozi"
             },
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "sstamina": -1 },
               "extraMechanic": "socialita"
             },
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
-              "extraMechanic": "socialita"
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+
             }
           ]
         },
@@ -966,32 +998,32 @@
             {
               "testo": "Rimani a studiare",
               "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -2 },
               "extraMechanic": "studio_materia"
             },
             {
               "testo": "Vado al mio lavoro part-time",
               "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "soldi": 30, "stamina": -3 },
               "extraMechanic": "lavoro"
             },
             {
               "testo": "Vado a fare compere",
               "conseguenza": "Ti prepari per andare a fare shopping",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "negozi"
             },
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "sstamina": -1 },
               "extraMechanic": "socialita"
             },
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
-              "extraMechanic": "socialita"
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+
             }
           ]
         },
@@ -1001,32 +1033,32 @@
             {
               "testo": "Rimani a studiare",
               "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -2 },
               "extraMechanic": "studio_materia"
             },
             {
               "testo": "Vado al mio lavoro part-time",
               "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "soldi": 30, "stamina": -3 },
               "extraMechanic": "lavoro"
             },
             {
               "testo": "Vado a fare compere",
               "conseguenza": "Ti prepari per andare a fare shopping",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "negozi"
             },
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "sstamina": -1 },
               "extraMechanic": "socialita"
             },
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
-              "extraMechanic": "socialita"
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+
             }
           ]
         },
@@ -1036,32 +1068,32 @@
             {
               "testo": "Rimani a studiare",
               "conseguenza": "Ti siedi alla tua scrivania prendendo un libro e iniziando a ripassare",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -2 },
               "extraMechanic": "studio_materia"
             },
             {
               "testo": "Vado al mio lavoro part-time",
               "conseguenza": "Vai al tuo lavoretto che ti sei trovato",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "soldi": 30, "stamina": -3 },
               "extraMechanic": "lavoro"
             },
             {
               "testo": "Vado a fare compere",
               "conseguenza": "Ti prepari per andare a fare shopping",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "negozi"
             },
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "sstamina": -1 },
               "extraMechanic": "socialita"
             },
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
-              "extraMechanic": "socialita"
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+
             }
           ]
         }
@@ -1079,24 +1111,24 @@
             {
               "testo": "Esci",
               "conseguenza": "Ti prepari per andare al club",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 2,"stamina": -3 },
               "extaMechanic":"social_serale"
             },
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "messaggi un contatto",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita_messaggi"
             },
             {
               "testo": "rimani a casa a giocare",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "intelligenza": 1, "stamina": -2 }
             }
           ]
         },
@@ -1106,24 +1138,24 @@
             {
               "testo": "Esci",
               "conseguenza": "Ti prepari per andare al club",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 2,"stamina": -3 },
               "extaMechanic":"social_serale"
             },
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "messaggi un contatto",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita_messaggi"
             },
             {
               "testo": "rimani a casa a giocare",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "intelligenza": 1, "stamina": -2 }
             }
           ]
         },
@@ -1133,24 +1165,24 @@
             {
               "testo": "Esci",
               "conseguenza": "Ti prepari per andare al club",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 2,"stamina": -3 },
               "extaMechanic":"social_serale"
             },
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "messaggi un contatto",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita_messaggi"
             },
             {
               "testo": "rimani a casa a giocare",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "intelligenza": 1, "stamina": -2 }
             }
           ]
         },
@@ -1160,24 +1192,24 @@
             {
               "testo": "Esci",
               "conseguenza": "Ti prepari per andare al club",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 2,"stamina": -3 },
               "extaMechanic":"social_serale"
             },
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "messaggi un contatto",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita_messaggi"
             },
             {
               "testo": "rimani a casa a giocare",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "intelligenza": 1, "stamina": -2 }
             }
           ]
         }
@@ -1189,24 +1221,24 @@
             {
               "testo": "Esci",
               "conseguenza": "Ti prepari per andare al club",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 2,"stamina": -3 },
               "extaMechanic":"social_serale"
             },
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "messaggi un contatto",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita_messaggi"
             },
             {
               "testo": "rimani a casa a giocare",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "intelligenza": 1, "stamina": -2 }
             }
           ]
         },
@@ -1216,24 +1248,24 @@
             {
               "testo": "Esci",
               "conseguenza": "Ti prepari per andare al club",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 2,"stamina": -3 },
               "extaMechanic":"social_serale"
             },
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "messaggi un contatto",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita_messaggi"
             },
             {
               "testo": "rimani a casa a giocare",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "intelligenza": 1, "stamina": -2 }
             }
           ]
         },
@@ -1243,24 +1275,24 @@
             {
               "testo": "Esci",
               "conseguenza": "Ti prepari per andare al club",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 2,"stamina": -3 },
               "extaMechanic":"social_serale"
             },
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "messaggi un contatto",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita_messaggi"
             },
             {
               "testo": "rimani a casa a giocare",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "intelligenza": 1, "stamina": -2 }
             }
           ]
         },
@@ -1270,24 +1302,24 @@
             {
               "testo": "Esci",
               "conseguenza": "Ti prepari per andare al club",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 2,"stamina": -3 },
               "extaMechanic":"social_serale"
             },
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
             },
             {
               "testo": "messaggi un contatto",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita_messaggi"
             },
             {
               "testo": "rimani a casa a giocare",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "status": -1 }
+              "modificheStatistiche": { "intelligenza": 1, "stamina": -2 }
             }
           ]
         }
@@ -1303,19 +1335,19 @@
             {
               "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
           ]
@@ -1326,19 +1358,19 @@
             {
               "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
           ]
@@ -1349,19 +1381,19 @@
             {
               "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
           ]
@@ -1372,19 +1404,19 @@
             {
               "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
           ]
@@ -1397,19 +1429,19 @@
             {
               "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
           ]
@@ -1420,19 +1452,19 @@
             {
               "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
           ]
@@ -1443,19 +1475,19 @@
             {
               "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
           ]
@@ -1466,19 +1498,19 @@
             {
               "testo": "vai a dormire",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 }
+              "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 1 },
+              "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
           ]
