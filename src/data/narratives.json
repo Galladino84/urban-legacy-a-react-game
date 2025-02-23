@@ -15,11 +15,56 @@
               "modificheStatistiche": { "status": -1 }
             }
           ]
+        },
+        "goth": {
+          "testo": "Ti svegli con la musica a tutto volume.",
+          "scelte": [
+            {
+              "testo": "Spegni subito la sveglia.",
+              "conseguenza": "Ti senti leggermente più energico.",
+              "modificheStatistiche": { "status": 1 }
+            },
+            {
+              "testo": "Ignora la sveglia e dormi ancora.",
+              "conseguenza": "Ti svegli in ritardo ma riposato.",
+              "modificheStatistiche": { "status": -1 }
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "Ti svegli con la musica a tutto volume.",
+          "scelte": [
+            {
+              "testo": "Spegni subito la sveglia.",
+              "conseguenza": "Ti senti leggermente più energico.",
+              "modificheStatistiche": { "status": 1 }
+            },
+            {
+              "testo": "Ignora la sveglia e dormi ancora.",
+              "conseguenza": "Ti svegli in ritardo ma riposato.",
+              "modificheStatistiche": { "status": -1 }
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "Ti svegli con la musica a tutto volume.",
+          "scelte": [
+            {
+              "testo": "Spegni subito la sveglia.",
+              "conseguenza": "Ti senti leggermente più energico.",
+              "modificheStatistiche": { "status": 1 }
+            },
+            {
+              "testo": "Ignora la sveglia e dormi ancora.",
+              "conseguenza": "Ti svegli in ritardo ma riposato.",
+              "modificheStatistiche": { "status": -1 }
+            }
+          ]
         }
       },
       "femmina": {
-        "goth": {
-          "testo": "Il tuo gatto ti osserva dalla poltrona.",
+        "tabboz": {
+          "testo": "Il tuo gatto ti osserva dalla poltrona, lo saguardo ammiccante che fà trasparire un distaccato affetto, tipico del tuo amico felino.Dopo aver visto che cambiavi posizione per alzarti dal letto il micio salta giù dalla poltrona per venire a strusciarsi.",
           "scelte": [
             {
               "testo": "Accarezzi il gatto.",
@@ -30,6 +75,1716 @@
               "testo": "Lo ignori e ti prepari.",
               "conseguenza": "Il gatto ti guarda male.",
               "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
+            }
+          ]
+        },
+        "goth": {
+          "testo": "Il tuo gatto ti osserva dalla poltrona, lo saguardo ammiccante che fà trasparire un distaccato affetto, tipico del tuo amico felino.Dopo aver visto che cambiavi posizione per alzarti dal letto il micio salta giù dalla poltrona per venire a strusciarsi.",
+          "scelte": [
+            {
+              "testo": "Accarezzi il gatto.",
+              "conseguenza": "Il gatto fa le fusa e ti senti meglio.",
+              "modificheStatistiche": { "carisma": 1 }
+            },
+            {
+              "testo": "Lo ignori e ti prepari.",
+              "conseguenza": "Il gatto ti guarda male.",
+              "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "Il tuo gatto ti osserva dalla poltrona, lo saguardo ammiccante che fà trasparire un distaccato affetto, tipico del tuo amico felino.Dopo aver visto che cambiavi posizione per alzarti dal letto il micio salta giù dalla poltrona per venire a strusciarsi.",
+          "scelte": [
+            {
+              "testo": "Accarezzi il gatto.",
+              "conseguenza": "Il gatto fa le fusa e ti senti meglio.",
+              "modificheStatistiche": { "carisma": 1 }
+            },
+            {
+              "testo": "Lo ignori e ti prepari.",
+              "conseguenza": "Il gatto ti guarda male.",
+              "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "Il tuo gatto ti osserva dalla poltrona, lo saguardo ammiccante che fà trasparire un distaccato affetto, tipico del tuo amico felino.Dopo aver visto che cambiavi posizione per alzarti dal letto il micio salta giù dalla poltrona per venire a strusciarsi.",
+          "scelte": [
+            {
+              "testo": "Accarezzi il gatto.",
+              "conseguenza": "Il gatto fa le fusa e ti senti meglio.",
+              "modificheStatistiche": { "carisma": 1 }
+            },
+            {
+              "testo": "Lo ignori e ti prepari.",
+              "conseguenza": "Il gatto ti guarda male.",
+              "modificheStatistiche": { "intelligenza": -1, "status": 1,"soldi": -10 }
+            }
+          ]
+        }
+      }
+    },
+
+    "mattina_presto": {
+      "maschio": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "femmina": {
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+
+    "mattina": {
+      "maschio": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "femmina": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+
+
+    "pomeriggio": {
+      "maschio": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "femmina": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+
+
+    "sera": {
+      "maschio": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "femmina": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+
+    "notte": {
+      "maschio": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "femmina": {
+        "tabboz": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "goth": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "metallaro": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
+            }
+          ]
+        },
+        "nerd": {
+          "testo": "È ora di decidere cosa fare questa mattina.",
+          "scelte": [
+            {
+              "testo": "Vai a scuola.",
+              "conseguenza": "Ti prepari per andare a scuola.",
+              "modificheStatistiche": { "intelligenza": 1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Segui attentamente le lezioni.",
+                  "conseguenza": "Impari nuove nozioni utili.",
+                  "modificheStatistiche": { "intelligenza": 2 }
+                },
+                {
+                  "testo": "Passi il tempo a disegnare sul quaderno.",
+                  "conseguenza": "Il professore ti rimprovera, ma il disegno è bello.",
+                  "modificheStatistiche": { "carisma": 1 }
+                }
+              ]
+            },
+            {
+              "testo": "Bigi la scuola.",
+              "conseguenza": "Hai deciso di non andare a scuola.",
+              "modificheStatistiche": { "status": -1 },
+              "scelteSecondarie": [
+                {
+                  "testo": "Vai al parco a rilassarti.",
+                  "conseguenza": "Passi del tempo tranquillo tra gli alberi.",
+                  "modificheStatistiche": { "status": 1 }
+                },
+                {
+                  "testo": "Cerchi un lavoretto per guadagnare qualcosa.",
+                  "conseguenza": "Guadagni qualche soldo extra.",
+                  "modificheStatistiche": { "soldi": 20 }
+                },
+                {
+                  "testo": "Vai in centro a incontrare amici.",
+                  "conseguenza": "Passi del tempo divertente, ma perdi tempo utile.",
+                  "modificheStatistiche": { "carisma": 2, "intelligenza": -1 }
+                }
+              ]
             }
           ]
         }

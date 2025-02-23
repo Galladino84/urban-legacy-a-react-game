@@ -2,6 +2,7 @@ $theme_class : "theme_goth";
 $theme_goth_secondary: #54244F;
 $theme_goth_dark: #000000;
 $theme_goth_light: #ffffff;
+$theme_goth_narrative_bg: #F7EDCB;
 
 .theme_goth {
   .main-content {
@@ -15,6 +16,9 @@ $theme_goth_light: #ffffff;
     font-weight: 400;
     font-style: normal;
     }
+
+    padding-bottom: 50px;
+    overflow: auto;
 
   }
 
@@ -92,6 +96,16 @@ $theme_goth_light: #ffffff;
   &_maschio {
     .sidebar.left {
       background-image: url('src/assets/themes/goth/sidebar_goth_maschio.png');
+    }
+  }
+
+  .narrative-scene {
+    &-box {
+      background-color: $theme_goth_narrative_bg;
+      padding: 10%;
+      color: $theme_goth_dark;
+      font-family: "League Gothic", serif;
+      font-size: 150%;
     }
   }
 
