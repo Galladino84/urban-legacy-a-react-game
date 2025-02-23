@@ -27,18 +27,48 @@ function GameMainScreen() {
   }, [giorno, fase, data]);
 
   const avanzaFase = () => {
+    if (!personaggio) return;
+  
+    // Controllo della stamina: se è a 0 o meno, forza la fase Notte con riposo completo
+    if (personaggio.stamina <= 0 && fasiGiornata[fase] !== "Notte") {
+      const personaggioRipristinato = {
+        ...personaggio,
+        stamina: 100, // Ripristina stamina completa
+        energia: 100, // Ripristina energia
+        umore: Math.min(personaggio.umore + 20, 100) // Recupero dell'umore (massimo 100)
+      };
+  
+      setPersonaggio(personaggioRipristinato);
+      localStorage.setItem("personaggio", JSON.stringify(personaggioRipristinato));
+      setFase(fasiGiornata.indexOf("Notte")); // Forza la fase a Notte
+      return; // Esce per evitare di avanzare ulteriormente la fase
+    }
+  
+    // Avanzamento normale delle fasi
     if (fase < fasiGiornata.length - 1) {
       setFase((prev) => prev + 1);
     } else {
-      setFase(0); // Reset delle fasi
+      // Se siamo alla fase Notte, passa al giorno successivo e resetta le statistiche
+      setFase(0);
       setGiorno((prev) => prev + 1);
       setData((prev) => {
         const nuovaData = new Date(prev);
         nuovaData.setDate(nuovaData.getDate() + 1);
         return nuovaData;
       });
+  
+      const personaggioRipristinato = {
+        ...personaggio,
+        stamina: 100,
+        energia: 100,
+        umore: Math.min(personaggio.umore + 20, 100)
+      };
+  
+      setPersonaggio(personaggioRipristinato);
+      localStorage.setItem("personaggio", JSON.stringify(personaggioRipristinato));
     }
   };
+  
 
   const formattaGiornoSettimana = (data) =>
     data.toLocaleDateString("it-IT", { weekday: "long" }).replace(/^\w/, (c) => c.toUpperCase());
