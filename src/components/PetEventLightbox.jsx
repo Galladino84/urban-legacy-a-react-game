@@ -34,8 +34,8 @@ const PetEventLightbox = ({ petEvent, personaggio, onOptionSelected }) => {
   };
 
   return (
-    <div className="pet-event-overlay">
-      <div className="pet-event-content">
+    <div className="pet-event-overlay lightbox-overlay">
+      <div className="pet-event-content lightbox-container">
         <h2>Evento Animale Domestico</h2>
         <p>{testoConNome}</p>
         {!selectedOption ? (

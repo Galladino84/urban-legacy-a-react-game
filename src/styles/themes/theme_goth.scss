@@ -109,8 +109,9 @@ $theme_goth_narrative_bg: #F7EDCB;
     }
   }
 
-  .pet-event-content {
+  .pet-event-content, .lightbox-container {
     background-color: $theme_goth_dark;
+    color: $theme_goth_light;
 
     .btn {
       background: $theme_goth_secondary;

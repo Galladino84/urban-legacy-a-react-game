@@ -8,13 +8,13 @@
             "testo": "accarezzi {gattoNome}",
             "conseguenza": "{gattoNome} socchiude gli occhi felice ti guarda e miagola",
             "sound": "miao",
-            "modificheStatistiche" : { "affinita_pet": 2 }
+            "modificheStatistiche" : { "affinità_gatto": 2 }
           },
           {
             "testo": "lo ignori",
             "conseguenza": "{gattoNome} abbassa la testa e torna a dormire",
             "sound": "miao",
-            "modificheStatistiche" : { "affinita_pet": 0 }
+            "modificheStatistiche" : { "affinità_gatto": 0 }
           }
         ]
       },
@@ -210,13 +210,13 @@
             "testo": "dai i croccantini a {gattoNome}",
             "conseguenza": "il tuo gatto si mette a mangiare felice",
             "sound": "miao",
-            "modificheStatistiche" : { "affinita_pet": 2 }
+            "modificheStatistiche" : { "affinità_gatto": 2 }
           },
           {
             "testo": "lo ignori",
             "conseguenza": "{gattoNome} abbassa la testa e cambia stanza",
             "sound": "miao",
-            "modificheStatistiche" : { "affinita_pet": -1 }
+            "modificheStatistiche" : { "affinità_gatto": -1 }
           }
         ]
       },

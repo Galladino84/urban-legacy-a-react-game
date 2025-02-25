@@ -9,21 +9,31 @@ function SidebarLeft() {
   const logoPath = `src/assets/logos/${percorso}.png`;
   const mirrorPath = `src/assets/mirrors/mirror_${percorso}.png`;
   const avatarPath = `src/assets/avatars/avatar_${percorso}_${personaggio?.sesso.toLowerCase()}_sidebar.png`;
-
   const placeholderLogo = `src/assets/logos/placeholder.png`;
   const placeholderMirror = `src/assets/mirrors/mirror_placeholder.png`;
 
   const handleReset = () => {
-    // Rimuove i dati salvati relativi al personaggio e gli eventi unici
-    localStorage.removeItem("personaggio");
-    localStorage.removeItem("uniqueEventsCompleted");
-    // Reset dei progressi di gioco
-    localStorage.setItem("giorno", "1");
-    localStorage.setItem("fase", "0");
-    localStorage.setItem("data", "2024-06-24T00:00:00.000Z");
+    if (window.confirm("Sei sicuro di voler resettare il personaggio e i progressi?")) {
+      localStorage.removeItem("personaggio");
+      localStorage.removeItem("giorno");
+      localStorage.removeItem("fase");
+      localStorage.removeItem("data");
+      localStorage.removeItem("uniqueEventsCompleted");
+      window.location.href = "/";
+    }
+  };
 
-    // Ricarica la pagina per riportare tutto allo stato iniziale
-    window.location.href = "/";
+  const handlePuliziaDati = () => {
+    const personaggioAggiornato = { ...personaggio };
+
+    if (personaggioAggiornato.statistiche?.affinita_pet !== undefined) {
+      personaggioAggiornato.statistiche.affinità_gatto = personaggioAggiornato.statistiche.affinita_pet;
+      delete personaggioAggiornato.statistiche.affinita_pet;
+    }
+
+    localStorage.setItem("personaggio", JSON.stringify(personaggioAggiornato));
+    alert("✅ Dati aggiornati e puliti correttamente!");
+    window.location.reload();
   };
 
   // Genera le stelle per lo status
@@ -63,14 +73,19 @@ function SidebarLeft() {
 
       {/* Profilo */}
       <p>
-        {personaggio?.nome} {personaggio?.cognome}
-        <br />
-        {personaggio?.percorso}
-        <br />
-        <strong>Fondi (€):</strong> {personaggio?.statistiche?.soldi} 💰
-        <br />
+        {personaggio?.nome} {personaggio?.cognome}<br />
+        {personaggio?.percorso}<br />
+        <strong>Fondi (€):</strong> {personaggio?.statistiche?.soldi} 💰<br />
         <strong>Status:</strong> {renderStars(personaggio?.statistiche?.status)}
       </p>
+
+      {/* Se il personaggio ha adottato un gatto, mostra l'affinità */}
+      {personaggio?.gattoAdottato && (
+        <div className="gatto-info mt-3 p-2 border rounded bg-light">
+          <p><strong>🐱 Gatto:</strong> {personaggio?.gattoNome}</p>
+          <p><strong>Affinità con {personaggio?.gattoNome}:</strong> {personaggio?.statistiche?.["affinità_gatto"] ?? 0} / 100</p>
+        </div>
+      )}
 
       {/* Statistiche */}
       <button className="btn btn-secondary w-100" onClick={() => setShowStats(!showStats)}>
@@ -82,27 +97,17 @@ function SidebarLeft() {
           <li className="list-group-item"><strong>Intelligenza:</strong> {personaggio?.statistiche?.intelligenza} 🧠</li>
           <li className="list-group-item"><strong>Carisma:</strong> {personaggio?.statistiche?.carisma} 😎</li>
           <li className="list-group-item"><strong>Resistenza:</strong> {personaggio?.statistiche?.stamina} 💪</li>
-          {personaggio.gattoAdottato !== undefined && (
-            <li className="list-group-item">
-              <strong>Gatto Adottato:</strong> {personaggio.gattoAdottato ? "Sì" : "No"}
-            </li>
-          )}
-          {personaggio.gattoAdottato && (
-            <>
-              <li className="list-group-item">
-                <strong>Nome del gatto:</strong> {personaggio.gattoNome}
-              </li>
-              <li className="list-group-item">
-                <strong>Affinità con il gatto:</strong> {personaggio.affinita_pet}
-              </li>
-            </>
-          )}
         </ul>
       )}
 
       {/* Pulsante di reset */}
       <button className="btn btn-danger mt-3 w-100" onClick={handleReset}>
-        Reset Personaggio
+        🔄 Reset Personaggio
+      </button>
+
+      {/* Pulsante per pulire i dati */}
+      <button className="btn btn-warning mt-2 w-100" onClick={handlePuliziaDati}>
+        🧹 Pulizia Dati
       </button>
     </aside>
   );
