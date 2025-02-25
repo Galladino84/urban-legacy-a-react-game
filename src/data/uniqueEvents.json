@@ -1,0 +1,28 @@
+{
+    "uniqueEvents": [
+      {
+        "id": "gatto_abbandonato",
+        "day": 7,
+        "phase": "risveglio",
+        "text": "Mentre vai a scuola, senti un miagolio disperato provenire da un cassonetto. Ti avvicini e scopri un cartone con dentro un gatto abbandonato. Cosa decidi di fare?",
+        "image": "src/assets/narratives/gatto_abbandonato.png",
+        "options": [
+          {
+            "text": "Adottarlo",
+            "prompt": "Inserisci il nome del gatto:",
+            "effects": {
+              "set": { "gattoAdottato": true },
+              "create": { "gattoNome": "", "affinita_pet": 0 }
+            }
+          },
+          {
+            "text": "Portarlo all'enpa",
+            "effects": {
+              "set": { "gattoAdottato": false }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

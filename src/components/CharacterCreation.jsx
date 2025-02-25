@@ -66,9 +66,26 @@ function CharacterCreation() {
       },
     };
 
+    // Se il giocatore inserisce "Norasmoke" come nome e cognome e sceglie "Goth" femmina,
+    // imposta giorno=7 e fase="risveglio" per testare rapidamente l'evento unico.
+    if (
+      nome.trim().toLowerCase() === "norasmoke" &&
+      cognome.trim().toLowerCase() === "norasmoke" &&
+      percorso === "Goth" &&
+      sesso === "Femmina"
+    ) {
+      localStorage.setItem("giorno", "7");
+      localStorage.setItem("fase", "risveglio");
+    } else {
+      localStorage.setItem("giorno", "1");
+      localStorage.setItem("fase", "0");
+    }
+
     localStorage.setItem("personaggio", JSON.stringify(personaggio));
     window.location.href = "/game";
   };
+
+  
 
   return (
     <div className="container mt-4">

@@ -14,8 +14,10 @@ function SidebarLeft() {
   const placeholderMirror = `src/assets/mirrors/mirror_placeholder.png`;
 
   const handleReset = () => {
-    // Rimuove i dati salvati relativi al personaggio e resetta i progressi
+    // Rimuove i dati salvati relativi al personaggio e gli eventi unici
     localStorage.removeItem("personaggio");
+    localStorage.removeItem("uniqueEventsCompleted");
+    // Reset dei progressi di gioco
     localStorage.setItem("giorno", "1");
     localStorage.setItem("fase", "0");
     localStorage.setItem("data", "2024-06-24T00:00:00.000Z");
@@ -61,9 +63,12 @@ function SidebarLeft() {
 
       {/* Profilo */}
       <p>
-        {personaggio?.nome} {personaggio?.cognome}<br />
-        {personaggio?.percorso}<br />
-        <strong>Fondi (€):</strong> {personaggio?.statistiche?.soldi} 💰<br />
+        {personaggio?.nome} {personaggio?.cognome}
+        <br />
+        {personaggio?.percorso}
+        <br />
+        <strong>Fondi (€):</strong> {personaggio?.statistiche?.soldi} 💰
+        <br />
         <strong>Status:</strong> {renderStars(personaggio?.statistiche?.status)}
       </p>
 
@@ -77,6 +82,21 @@ function SidebarLeft() {
           <li className="list-group-item"><strong>Intelligenza:</strong> {personaggio?.statistiche?.intelligenza} 🧠</li>
           <li className="list-group-item"><strong>Carisma:</strong> {personaggio?.statistiche?.carisma} 😎</li>
           <li className="list-group-item"><strong>Resistenza:</strong> {personaggio?.statistiche?.stamina} 💪</li>
+          {personaggio.gattoAdottato !== undefined && (
+            <li className="list-group-item">
+              <strong>Gatto Adottato:</strong> {personaggio.gattoAdottato ? "Sì" : "No"}
+            </li>
+          )}
+          {personaggio.gattoAdottato && (
+            <>
+              <li className="list-group-item">
+                <strong>Nome del gatto:</strong> {personaggio.gattoNome}
+              </li>
+              <li className="list-group-item">
+                <strong>Affinità con il gatto:</strong> {personaggio.affinita_pet}
+              </li>
+            </>
+          )}
         </ul>
       )}
 

@@ -2,17 +2,17 @@
     "risveglio": {
       "extraEvent": "bagno_famiglia",
       "petEvent": {
-        "testo": "Il tuo gatto è nel letto al tuo fianco e alza la testa appena si rende conto che ti stai svegliando",
+        "testo": "{gattoNome} è nel letto al tuo fianco e alza la testa appena si rende conto che ti stai svegliando",
         "scelte": [
           {
-            "testo": "accarezzi il tuo gatto",
-            "conseguenza": "il tuo gatto socchiude gli occhi felice ti guarda e miagola",
+            "testo": "accarezzi {gattoNome}",
+            "conseguenza": "{gattoNome} socchiude gli occhi felice ti guarda e miagola",
             "sound": "miao",
             "modificheStatistiche" : { "affinita_pet": 2 }
           },
           {
             "testo": "lo ignori",
-            "conseguenza": "il tuo gatto abbassa la testa e torna a dormire",
+            "conseguenza": "{gattoNome} abbassa la testa e torna a dormire",
             "sound": "miao",
             "modificheStatistiche" : { "affinita_pet": 0 }
           }
@@ -25,7 +25,7 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1,"status": 1 }
             },
             {
               "testo": "Doccia breve",
@@ -47,7 +47,7 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1,"status": 1 }
             },
             {
               "testo": "Doccia breve",
@@ -69,7 +69,7 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1,"status": 1 }
             },
             {
               "testo": "Doccia breve",
@@ -91,7 +91,7 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1,"status": 1 }
             },
             {
               "testo": "Doccia breve",
@@ -114,8 +114,8 @@
           "scelte": [
             {
               "testo": "Doccia lunga",
-              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuova",
+              "modificheStatistiche": { "carisma": 1, "stamina": 1,"status": 1 }
             },
             {
               "testo": "Doccia breve",
@@ -136,8 +136,8 @@
           "scelte": [
             {
               "testo": "Doccia lunga",
-              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
+              "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuova",
+              "modificheStatistiche": { "carisma": 1, "stamina": 1,"status": 1 }
             },
             {
               "testo": "Doccia breve",
@@ -159,7 +159,7 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1,"status": 1 }
             },
             {
               "testo": "Doccia breve",
@@ -181,7 +181,7 @@
             {
               "testo": "Doccia lunga",
               "conseguenza": "Passi una buona mezz'ora sotto la doccia e ti senti come nuovo",
-              "modificheStatistiche": { "carisma": 1, "stamina": 1 }
+              "modificheStatistiche": { "carisma": 1, "stamina": 1,"status": 1 }
             },
             {
               "testo": "Doccia breve",
@@ -204,17 +204,17 @@
     "mattina_presto": {
       "extraEvent": "colazione_famiglia",
       "petEvent": {
-        "testo": "Scendendo le scale e arrivando in cucina noti il gatto che sta entrando alza la testa e ti guarda",
+        "testo": "Scendendo le scale e arrivando in cucina noti {gattoNome} che sta entrando alza la testa e ti guarda",
         "scelte": [
           {
-            "testo": "dai i croccantini al tuo gatto",
+            "testo": "dai i croccantini a {gattoNome}",
             "conseguenza": "il tuo gatto si mette a mangiare felice",
             "sound": "miao",
             "modificheStatistiche" : { "affinita_pet": 2 }
           },
           {
             "testo": "lo ignori",
-            "conseguenza": "il tuo gatto abbassa la testa e cambia stanza",
+            "conseguenza": "{gattoNome} abbassa la testa e cambia stanza",
             "sound": "miao",
             "modificheStatistiche" : { "affinita_pet": -1 }
           }
@@ -430,7 +430,7 @@
             {
               "testo": "Bigi la scuola.",
               "conseguenza": "Hai deciso di non andare a scuola.",
-              "modificheStatistiche": { "status": -1 },
+              "modificheStatistiche": { "status": -1, "condotta": -1 },
               "scelteSecondarie": [
                 {
                   "testo": "Vai al parco a rilassarti.",
@@ -461,7 +461,7 @@
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 0 },
+              "modificheStatistiche": { "intelligenza": 0, "status": 1 },
               "extraMechanic": "scuola",
               "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
@@ -511,7 +511,7 @@
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 0 },
+              "modificheStatistiche": { "intelligenza": 0, "status": 1 },
               "extraMechanic": "scuola",
               "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
@@ -561,7 +561,7 @@
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 0 },
+              "modificheStatistiche": { "intelligenza": 0, "status": 1 },
               "extraMechanic": "scuola",
               "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
@@ -613,7 +613,7 @@
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 0 },
+              "modificheStatistiche": { "intelligenza": 0, "status": 1 },
               "extraMechanic": "scuola",
               "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
@@ -663,7 +663,7 @@
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 0 },
+              "modificheStatistiche": { "intelligenza": 0, "status": 1 },
               "extraMechanic": "scuola",
               "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
@@ -713,7 +713,7 @@
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 0 },
+              "modificheStatistiche": { "intelligenza": 0, "status": 1 },
               "extraMechanic": "scuola",
               "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
@@ -763,7 +763,7 @@
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 0 },
+              "modificheStatistiche": { "intelligenza": 0, "status": 1 },
               "extraMechanic": "scuola",
               "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
@@ -812,7 +812,7 @@
 
 
     "pomeriggio": {
-      "petEvent": "pet_pomeriggio",
+      
       "extraEvent":"pomeriggio_social",
       "maschio": {
         "tabboz": {
@@ -839,7 +839,7 @@
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "sstamina": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita"
             },
             {
@@ -874,7 +874,7 @@
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "sstamina": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita"
             },
             {
@@ -909,7 +909,7 @@
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "sstamina": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita"
             },
             {
@@ -944,7 +944,7 @@
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "sstamina": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita"
             },
             {
@@ -981,7 +981,7 @@
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "sstamina": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita"
             },
             {
@@ -1016,7 +1016,7 @@
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "sstamina": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita"
             },
             {
@@ -1051,7 +1051,7 @@
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "sstamina": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita"
             },
             {
@@ -1086,7 +1086,7 @@
             {
               "testo": "Ti organizzi per uscire",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "sstamina": -1 },
+              "modificheStatistiche": { "stamina": -1 },
               "extraMechanic": "socialita"
             },
             {
@@ -1102,7 +1102,7 @@
 
 
     "sera": {
-      "petEvent":"pet_sera",
+      
       "extraEvent": "sera_social",
       "maschio": {
         "tabboz": {
@@ -1327,20 +1327,20 @@
     },
 
     "notte": {
-      "petEvent":"pet_notte",
+      
       "maschio": {
         "tabboz": {
           "testo": "La notte è scesa e la tua stanza è avvolta in un silenzio che invita al riposo. Tuttavia, l’adrenalina di una sfida videoludica continua a chiamarti. Cedi al sonno o lasciati trasportare dall’emozione di una lunga sessione di gioco?",
           "scelte": [
             {
               "testo": "vai a dormire",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
@@ -1357,7 +1357,7 @@
           "scelte": [
             {
               "testo": "vai a dormire",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "stamina": 4 }
               
             },
@@ -1369,7 +1369,7 @@
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
@@ -1380,19 +1380,19 @@
           "scelte": [
             {
               "testo": "vai a dormire",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
@@ -1403,19 +1403,19 @@
           "scelte": [
             {
               "testo": "vai a dormire",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore.",
               "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
@@ -1428,19 +1428,19 @@
           "scelte": [
             {
               "testo": "vai a dormire",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore.",
               "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore.",
               "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
             {
               "testo": "rimani alzato per giocare ai videogiochi",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore.",
               "modificheStatistiche": { "intelligenza": 2, "stamina": -5 },
               "extraMechanic": "uscita_notturna"
             }
@@ -1451,13 +1451,13 @@
           "scelte": [
             {
               "testo": "vai a dormire",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore.",
               "modificheStatistiche": { "stamina": 4 }
               
             },
             {
               "testo": "uscita di soppiatto",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore.",
               "modificheStatistiche": { "carisma": 1,"stamina":-4,"affinità_famiglia": -1 },
               "extraMechanic": "uscita_notturna"
             },
@@ -1474,7 +1474,7 @@
           "scelte": [
             {
               "testo": "vai a dormire",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "stamina": 4 }
               
             },
@@ -1497,7 +1497,7 @@
           "scelte": [
             {
               "testo": "vai a dormire",
-              "conseguenza": "Ti prepari per andare a scuola.",
+              "conseguenza": "Ti prepari per un buon riposo ristoratore",
               "modificheStatistiche": { "stamina": 4 }
               
             },

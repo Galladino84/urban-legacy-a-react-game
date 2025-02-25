@@ -109,5 +109,55 @@ $theme_goth_narrative_bg: #F7EDCB;
     }
   }
 
+  .pet-event-content {
+    background-color: $theme_goth_dark;
+
+    .btn {
+      background: $theme_goth_secondary;
+      font-size: 130%;
+      border-radius: 0;
+      text-align: left;
+      padding-left: 25px;
+      position: relative;
+      margin: 40px 0;
+      //transition: background-color ease-in-out 0.3s;
+
+      &:hover {
+        background-color: $theme_goth_secondary;
+        &:after {
+          background: url('src/assets/themes/goth/cta_icon_hover.png') left top no-repeat;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        width: 122px;
+        height: 94px;
+        content: '';
+        background: url('src/assets/themes/goth/cta_icon_hover.png') left top no-repeat;
+        right: 0;
+        bottom: -26px;
+      }
+
+      &-secondary {
+        padding-left: 5px;
+        text-align: center;
+        background: none;
+        color: $theme_goth_dark;
+        text-align: center;
+
+        &:hover {
+          background: none;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+      
+    }
+  }
+
 }
 
