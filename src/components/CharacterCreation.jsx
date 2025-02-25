@@ -14,9 +14,9 @@ const calcolaStatisticheIniziali = (percorso, sesso) => {
   // Applica i bonus in base al sesso
   const bonus = {
     Tabboz: sesso === "Maschio" ? { stamina: +1, soldi: +5 } : { carisma: +1, soldi: -5 },
-    Goth: sesso === "Maschio" ? { IQ: +1, carisma: -1 } : { carisma: +1, stamina: -1 },
-    Metallaro: sesso === "Maschio" ? { stamina: +1, IQ: -1 } : { carisma: +1, stamina: -1 },
-    Nerd: sesso === "Maschio" ? { IQ: +1, soldi: -5 } : { carisma: +1, soldi: -5 },
+    Goth: sesso === "Maschio" ? { intelligenza: +1, carisma: -1 } : { carisma: +1, stamina: -1 },
+    Metallaro: sesso === "Maschio" ? { stamina: +1, intelligenza: -1 } : { carisma: +1, stamina: -1 },
+    Nerd: sesso === "Maschio" ? { intelligenza: +1, soldi: -5 } : { carisma: +1, soldi: -5 },
   };
 
   Object.entries(bonus[percorso]).forEach(([stat, value]) => {
@@ -56,7 +56,8 @@ function CharacterCreation() {
       sesso,
       percorso,
       orientamento,
-      statistiche,
+      statistiche, // statistiche correnti
+      initialStatistiche: { ...statistiche }, // salvataggio dei valori iniziali per il ripristino
       famiglia: {
         mamma: famiglia.mamma ? `${nomiFamiliari.mamma} ${cognome}` : null,
         papà: famiglia.papà ? `${nomiFamiliari.papà} ${cognome}` : null,
@@ -86,8 +87,12 @@ function CharacterCreation() {
         <div className="mb-3">
           <label>Sesso</label>
           <div>
-            <label><input type="radio" name="sesso" value="Maschio" onChange={(e) => setSesso(e.target.value)} required /> Maschio</label>
-            <label className="ms-3"><input type="radio" name="sesso" value="Femmina" onChange={(e) => setSesso(e.target.value)} /> Femmina</label>
+            <label>
+              <input type="radio" name="sesso" value="Maschio" onChange={(e) => setSesso(e.target.value)} required /> Maschio
+            </label>
+            <label className="ms-3">
+              <input type="radio" name="sesso" value="Femmina" onChange={(e) => setSesso(e.target.value)} /> Femmina
+            </label>
           </div>
         </div>
 

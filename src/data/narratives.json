@@ -411,7 +411,7 @@
             {
               "testo": "Vai a scuola.",
               "conseguenza": "Ti prepari per andare a scuola.",
-              "modificheStatistiche": { "intelligenza": 0 },
+              "modificheStatistiche": { "intelligenza": 0, "status": 1 },
               "extraMechanic": "scuola",
               "extraEvent": "scuola_frequenza",
               "scelteSecondarie": [
