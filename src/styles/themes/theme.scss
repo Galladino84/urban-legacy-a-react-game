@@ -1,0 +1,473 @@
+.avatar-container {
+    position: relative;
+    width: 276px;
+    height: 389px;
+    margin: 0 auto;
+    
+  
+    .mirror,
+    .avatar {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      left: 0;
+      top: 0;
+    }
+  
+    .mirror {
+      z-index: 5;
+      left: 0;
+      top: 10px;
+    }
+  
+    .avatar {
+      z-index: 2;
+    }
+  }
+  
+  .accordion-button {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+    &:hover {
+      background-color: #e2e6ea;
+    }
+  
+    &::after {
+      transition: transform 0.3s ease;
+    }
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); // Freccia che ruota
+  }
+  
+  .accordion-collapse {
+    transition: height 0.35s ease, opacity 0.35s ease;
+    opacity: 0;
+  }
+  
+  .accordion-collapse.show {
+    opacity: 1;
+  }
+
+  .game-header {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-bottom: 3px solid #444;
+    margin: -20px -20px 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .header-content span {
+    margin: 0 10px;
+  }
+
+  .main-content {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    /*width: 60%;*/
+  }
+
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .lightbox-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .lightbox-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+  
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .lightbox-content, .unique-event-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: #000;
+  }
+  
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .lightbox-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+  
+  .unique-event-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  .unique-event-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .unique-event-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  .unique-event-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .unique-event-option {
+    margin: 10px 0;
+  }
+  
+  .pet-event-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+   
+
+  /* Overlay scuro per l'evento unico */
+.unique-event-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenitore principale dell'evento unico */
+.unique-event-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animazione di comparsa */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Immagine dell'evento */
+.unique-event-container img {
+  border-radius: 10px;
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Testo descrittivo */
+.unique-event-container p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Pulsanti delle opzioni */
+.unique-event-container .options button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.unique-event-container .options button:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Box del prompt per l'inserimento dati */
+.prompt-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.prompt-box button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Box delle conseguenze dopo la scelta */
+.consequence-box {
+  background-color: #e7f4e4;
+  border-left: 4px solid #28a745;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.consequence-box p {
+  color: #155724;
+  font-weight: 500;
+}
+
+.consequence-box button {
+  margin-top: 12px;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .unique-event-container {
+    padding: 15px 20px;
+  }
+
+  .unique-event-container p {
+    font-size: 1rem;
+  }
+
+  .unique-event-container img {
+    max-height: 200px;
+  }
+}
+
+
+
+/* Animazione di comparsa (fade-in con scala) */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Stile comune per tutti i lightbox */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenitore principale con animazione */
+.lightbox-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeInScale 0.3s ease-in-out;
+}
+
+/* Testo all’interno del lightbox */
+.lightbox-container p {
+  
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Pulsanti comuni */
+.lightbox-container button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.lightbox-container button:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Prompt per l’inserimento dati */
+.prompt-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.prompt-box button {
+  margin-top: 10px;
+}
+
+/* Conseguenze visive */
+.consequence-box {
+  background-color: #e7f4e4;
+  border-left: 4px solid #28a745;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.consequence-box p {
+  color: #155724;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .lightbox-container {
+    padding: 15px 20px;
+  }
+
+  .lightbox-container p {
+    font-size: 1rem;
+  }
+}

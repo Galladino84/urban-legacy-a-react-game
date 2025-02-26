@@ -106,3 +106,139 @@ button:focus-visible {
 .sidebar-right-hidden {
   transform: translateX(100%);
 }
+
+/* Layout generale */
+.game-container {
+  display: flex;
+}
+
+/* Temi dinamici */
+.theme_tabboz {
+  --primary-color: #ff9800;
+  --background-color: #fff3e0;
+}
+
+.theme_goth {
+  --primary-color: #4a148c;
+  --background-color: #f3e5f5;
+}
+
+.theme_metallaro {
+  --primary-color: #212121;
+  --background-color: #e0e0e0;
+}
+
+.theme_nerd {
+  --primary-color: #1976d2;
+  --background-color: #e3f2fd;
+}
+
+/* Applicazione dei temi */
+.main-content {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 20px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  min-height: 100vh;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+.sidebar {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+/* Layout Generale */
+.game-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 15px;
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.left {
+  left: 0;
+}
+
+.sidebar.right {
+  right: 0;
+}
+
+.main-content {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+/* Pulsanti */
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.theme_tabboz .main-content { background-color: #fff3cd; }
+.theme_goth .main-content { background-color: #f5f5f5; color: #2c2c2c; }
+.theme_metallaro .main-content { background-color: #e0e0e0; color: #333; }
+.theme_nerd .main-content { background-color: #d1e7dd; }
+
+
+.list-group-item {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}

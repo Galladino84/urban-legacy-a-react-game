@@ -1,0 +1,8 @@
+{
+    "data_inizio": "2024-06-24",
+    "giorno_corrente": 1,
+    "fase_corrente": "risveglio",
+    "fasi_giornata": ["inizio_giornata", "risveglio", "mattina_presto", "mattina", "pomeriggio", "sera", "notte"],
+    "giorni_massimi": 1460
+  }
+  

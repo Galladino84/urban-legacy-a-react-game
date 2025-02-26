@@ -1,154 +1,165 @@
 import React, { useState } from "react";
 
-function CharacterCreation() {
-  const [formData, setFormData] = useState({
-    nome: "",
-    cognome: "",
-    sesso: "maschio",
-    percorso: "Tabboz",
-    orientamento: "etero",
-    famiglia: { mamma: true, sorella: true }
-  });
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: type === "checkbox" ? checked : value
-    }));
+// Funzione per calcolare le statistiche iniziali
+const calcolaStatisticheIniziali = (percorso, sesso) => {
+  const baseStats = {
+    Tabboz: { status: 3, intelligenza: 4, carisma: 7, stamina: 8, soldi: 50 },
+    Goth: { status: 2, intelligenza: 6, carisma: 6, stamina: 5, soldi: 40 },
+    Metallaro: { status: 3, intelligenza: 5, carisma: 5, stamina: 7, soldi: 45 },
+    Nerd: { status: 1, intelligenza: 9, carisma: 4, stamina: 4, soldi: 30 },
   };
 
-  const handleFamilyChange = (e) => {
+  const stats = { ...baseStats[percorso] };
+
+  // Applica i bonus in base al sesso
+  const bonus = {
+    Tabboz: sesso === "Maschio" ? { stamina: +1, soldi: +5 } : { carisma: +1, soldi: -5 },
+    Goth: sesso === "Maschio" ? { intelligenza: +1, carisma: -1 } : { carisma: +1, stamina: -1 },
+    Metallaro: sesso === "Maschio" ? { stamina: +1, intelligenza: -1 } : { carisma: +1, stamina: -1 },
+    Nerd: sesso === "Maschio" ? { intelligenza: +1, soldi: -5 } : { carisma: +1, soldi: -5 },
+  };
+
+  Object.entries(bonus[percorso]).forEach(([stat, value]) => {
+    stats[stat] += value;
+  });
+
+  return stats;
+};
+
+function CharacterCreation() {
+  const [nome, setNome] = useState("");
+  const [cognome, setCognome] = useState("");
+  const [sesso, setSesso] = useState("");
+  const [percorso, setPercorso] = useState("Tabboz");
+  const [orientamento, setOrientamento] = useState("Etero");
+  const [famiglia, setFamiglia] = useState({ mamma: false, papà: false, sorella: false, fratello: false });
+  const [nomiFamiliari, setNomiFamiliari] = useState({ mamma: "", papà: "", sorella: "", fratello: "" });
+
+  const handleFamigliaChange = (e) => {
     const { name, checked } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      famiglia: { ...prev.famiglia, [name]: checked }
-    }));
+    setFamiglia((prev) => ({ ...prev, [name]: checked }));
+  };
+
+  const handleNomeFamigliaChange = (e) => {
+    const { name, value } = e.target;
+    setNomiFamiliari((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("personaggio", JSON.stringify(formData));
-    alert("Personaggio creato! Passa alla schermata di gioco.");
-    window.location.reload(); // Per aggiornare la sidebar dopo la creazione
+
+    const statistiche = calcolaStatisticheIniziali(percorso, sesso);
+
+    const personaggio = {
+      nome,
+      cognome,
+      sesso,
+      percorso,
+      orientamento,
+      statistiche, // statistiche correnti
+      initialStatistiche: { ...statistiche }, // salvataggio dei valori iniziali per il ripristino
+      famiglia: {
+        mamma: famiglia.mamma ? `${nomiFamiliari.mamma} ${cognome}` : null,
+        papà: famiglia.papà ? `${nomiFamiliari.papà} ${cognome}` : null,
+        sorella: famiglia.sorella ? `${nomiFamiliari.sorella} ${cognome}` : null,
+        fratello: famiglia.fratello ? `${nomiFamiliari.fratello} ${cognome}` : null,
+      },
+    };
+
+    // Se il giocatore inserisce "Norasmoke" come nome e cognome e sceglie "Goth" femmina,
+    // imposta giorno=7 e fase="risveglio" per testare rapidamente l'evento unico.
+    if (
+      nome.trim().toLowerCase() === "norasmoke" &&
+      cognome.trim().toLowerCase() === "norasmoke" &&
+      percorso === "Goth" &&
+      sesso === "Femmina"
+    ) {
+      localStorage.setItem("giorno", "7");
+      localStorage.setItem("fase", "risveglio");
+    } else {
+      localStorage.setItem("giorno", "1");
+      localStorage.setItem("fase", "0");
+    }
+
+    localStorage.setItem("personaggio", JSON.stringify(personaggio));
+    window.location.href = "/game";
   };
+
+  
 
   return (
     <div className="container mt-4">
       <h2>Creazione del Personaggio</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label className="form-label">Nome</label>
-          <input
-            type="text"
-            className="form-control"
-            name="nome"
-            value={formData.nome}
-            onChange={handleChange}
-            required
-          />
+          <label>Nome</label>
+          <input type="text" className="form-control" value={nome} onChange={(e) => setNome(e.target.value)} required />
         </div>
+
         <div className="mb-3">
-          <label className="form-label">Cognome</label>
-          <input
-            type="text"
-            className="form-control"
-            name="cognome"
-            value={formData.cognome}
-            onChange={handleChange}
-            required
-          />
+          <label>Cognome</label>
+          <input type="text" className="form-control" value={cognome} onChange={(e) => setCognome(e.target.value)} required />
         </div>
+
         <div className="mb-3">
-          <label className="form-label">Sesso</label>
-          <div className="form-check">
-            <input
-              type="radio"
-              className="form-check-input"
-              name="sesso"
-              value="maschio"
-              checked={formData.sesso === "maschio"}
-              onChange={handleChange}
-              id="sessoMaschio"
-            />
-            <label className="form-check-label" htmlFor="sessoMaschio">
-              Maschio
+          <label>Sesso</label>
+          <div>
+            <label>
+              <input type="radio" name="sesso" value="Maschio" onChange={(e) => setSesso(e.target.value)} required /> Maschio
             </label>
-          </div>
-          <div className="form-check">
-            <input
-              type="radio"
-              className="form-check-input"
-              name="sesso"
-              value="femmina"
-              checked={formData.sesso === "femmina"}
-              onChange={handleChange}
-              id="sessoFemmina"
-            />
-            <label className="form-check-label" htmlFor="sessoFemmina">
-              Femmina
+            <label className="ms-3">
+              <input type="radio" name="sesso" value="Femmina" onChange={(e) => setSesso(e.target.value)} /> Femmina
             </label>
           </div>
         </div>
+
         <div className="mb-3">
-          <label className="form-label">Percorso</label>
-          <select
-            className="form-select"
-            name="percorso"
-            value={formData.percorso}
-            onChange={handleChange}
-          >
-            <option value="Tabboz">Tabboz</option>
-            <option value="Goth">Goth</option>
-            <option value="Metallaro">Metallaro</option>
-            <option value="Nerd">Nerd</option>
+          <label>Percorso</label>
+          <select className="form-select" value={percorso} onChange={(e) => setPercorso(e.target.value)}>
+            <option>Tabboz</option>
+            <option>Goth</option>
+            <option>Metallaro</option>
+            <option>Nerd</option>
           </select>
         </div>
+
         <div className="mb-3">
-          <label className="form-label">Orientamento Sessuale</label>
-          <select
-            className="form-select"
-            name="orientamento"
-            value={formData.orientamento}
-            onChange={handleChange}
-          >
-            <option value="etero">Etero</option>
-            <option value="omo">Omosessuale</option>
-            <option value="bi">Bisessuale</option>
+          <label>Orientamento Sessuale</label>
+          <select className="form-select" value={orientamento} onChange={(e) => setOrientamento(e.target.value)}>
+            <option>Etero</option>
+            <option>Omosessuale</option>
+            <option>Bisessuale</option>
           </select>
         </div>
+
         <div className="mb-3">
-          <label className="form-label">Composizione Familiare</label>
-          <div className="form-check">
-            <input
-              type="checkbox"
-              className="form-check-input"
-              name="mamma"
-              checked={formData.famiglia.mamma}
-              onChange={handleFamilyChange}
-              id="famigliaMamma"
-            />
-            <label className="form-check-label" htmlFor="famigliaMamma">
-              Mamma
-            </label>
-          </div>
-          <div className="form-check">
-            <input
-              type="checkbox"
-              className="form-check-input"
-              name="sorella"
-              checked={formData.famiglia.sorella}
-              onChange={handleFamilyChange}
-              id="famigliaSorella"
-            />
-            <label className="form-check-label" htmlFor="famigliaSorella">
-              Sorella
-            </label>
-          </div>
+          <label>Composizione Familiare</label>
+          {["mamma", "papà", "sorella", "fratello"].map((fam) => (
+            <div className="form-check" key={fam}>
+              <input
+                className="form-check-input"
+                type="checkbox"
+                name={fam}
+                checked={famiglia[fam]}
+                onChange={handleFamigliaChange}
+              />
+              <label className="form-check-label">{fam.charAt(0).toUpperCase() + fam.slice(1)}</label>
+              {famiglia[fam] && (
+                <input
+                  type="text"
+                  name={fam}
+                  placeholder={`Nome del/la ${fam}`}
+                  className="form-control mt-2"
+                  value={nomiFamiliari[fam]}
+                  onChange={handleNomeFamigliaChange}
+                  required
+                />
+              )}
+            </div>
+          ))}
         </div>
-        <button type="submit" className="btn btn-primary">
-          Crea Personaggio
-        </button>
+
+        <button type="submit" className="btn btn-primary">Crea Personaggio</button>
       </form>
     </div>
   );

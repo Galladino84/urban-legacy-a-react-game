@@ -1,0 +1,19 @@
+{
+    "Tabboz": {
+      "maschio": { "status": 3, "intelligenza": 4, "carisma": 7, "stamina": 9, "soldi": 55 },
+      "femmina": { "status": 3, "intelligenza": 4, "carisma": 8, "stamina": 8, "soldi": 45 }
+    },
+    "Goth": {
+      "maschio": { "status": 2, "intelligenza": 7, "carisma": 5, "stamina": 5, "soldi": 40 },
+      "femmina": { "status": 2, "intelligenza": 6, "carisma": 7, "stamina": 4, "soldi": 40 }
+    },
+    "Metallaro": {
+      "maschio": { "status": 3, "intelligenza": 4, "carisma": 5, "stamina": 8, "soldi": 50 },
+      "femmina": { "status": 3, "intelligenza": 5, "carisma": 6, "stamina": 7, "soldi": 45 }
+    },
+    "Nerd": {
+      "maschio": { "status": 1, "intelligenza": 10, "carisma": 4, "stamina": 4, "soldi": 25 },
+      "femmina": { "status": 1, "intelligenza": 9, "carisma": 5, "stamina": 4, "soldi": 25 }
+    }
+  }
+  

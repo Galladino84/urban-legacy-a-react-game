@@ -1,0 +1,8 @@
+{
+    "lunedi": ["italiano", "matematica"],
+    "martedi": ["inglese", "storia"],
+    "mercoledi": ["scienze", "filosofia"],
+    "giovedi": ["educazione fisica", "arte"],
+    "venerdi": ["informatica", "diritto"]
+  }
+  

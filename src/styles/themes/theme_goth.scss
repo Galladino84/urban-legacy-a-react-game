@@ -1,0 +1,164 @@
+$theme_class : "theme_goth";
+$theme_goth_secondary: #54244F;
+$theme_goth_dark: #000000;
+$theme_goth_light: #ffffff;
+$theme_goth_narrative_bg: #F7EDCB;
+
+.theme_goth {
+  .main-content {
+
+    background-color: $theme_goth_dark;
+    color: $theme_goth_light;
+
+    &h2, &h3 {
+      font-family: "League Gothic", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    padding-bottom: 50px;
+    overflow: auto;
+
+  }
+
+  .sidebar.left {
+    background: #ffffff url('src/assets/themes/goth/sidebar_goth_left.png') center top repeat;
+    font-family: "League Gothic", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+    .list-group-item {
+      background: none;
+      border: none;
+      font-size: 130%;
+    }
+
+    p {
+      font-size: 130%;
+      color: $theme_goth_dark;
+    }
+
+    .btn {
+      background: $theme_goth_dark;
+      font-size: 130%;
+      border-radius: 0;
+      text-align: left;
+      padding-left: 25px;
+      position: relative;
+      margin: 40px 0;
+      //transition: background-color ease-in-out 0.3s;
+
+      &:hover {
+        background-color: $theme_goth_secondary;
+        &:after {
+          background: url('src/assets/themes/goth/cta_icon_hover.png') left top no-repeat;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        width: 122px;
+        height: 94px;
+        content: '';
+        background: url('src/assets/themes/goth/cta_icon.png') left top no-repeat;
+        right: 0;
+        bottom: -26px;
+      }
+
+      &-secondary {
+        padding-left: 5px;
+        text-align: center;
+        background: none;
+        color: $theme_goth_dark;
+        text-align: center;
+
+        &:hover {
+          background: none;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+      
+    }
+
+    .list-group {
+      margin-top: -20px !important;
+    }
+
+  }
+
+  &_maschio {
+    .sidebar.left {
+      background-image: url('src/assets/themes/goth/sidebar_goth_maschio.png');
+    }
+  }
+
+  .narrative-scene {
+    &-box {
+      background-color: $theme_goth_narrative_bg;
+      padding: 10%;
+      color: $theme_goth_dark;
+      font-family: "League Gothic", serif;
+      font-size: 150%;
+    }
+  }
+
+  .pet-event-content, .lightbox-container {
+    background-color: $theme_goth_dark;
+    color: $theme_goth_light;
+
+    .btn {
+      background: $theme_goth_secondary;
+      font-size: 130%;
+      border-radius: 0;
+      text-align: left;
+      padding-left: 25px;
+      position: relative;
+      margin: 40px 0;
+      //transition: background-color ease-in-out 0.3s;
+
+      &:hover {
+        background-color: $theme_goth_secondary;
+        &:after {
+          background: url('src/assets/themes/goth/cta_icon_hover.png') left top no-repeat;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        width: 122px;
+        height: 94px;
+        content: '';
+        background: url('src/assets/themes/goth/cta_icon_hover.png') left top no-repeat;
+        right: 0;
+        bottom: -26px;
+      }
+
+      &-secondary {
+        padding-left: 5px;
+        text-align: center;
+        background: none;
+        color: $theme_goth_dark;
+        text-align: center;
+
+        &:hover {
+          background: none;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+      
+    }
+  }
+
+}
+
