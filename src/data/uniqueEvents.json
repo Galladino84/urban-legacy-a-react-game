@@ -1,49 +1,69 @@
 {
-    "uniqueEvents": [
-      {
-        "id": "gatto_abbandonato",
-        "day": 7,
-        "phase": "mattina",
-        "text": "Mentre vai a scuola, senti un miagolio disperato provenire da un cassonetto. Ti avvicini e scopri un cartone con dentro un gatto abbandonato. Cosa decidi di fare?",
-        "image": "src/assets/narratives/gatto_abbandonato.png",
-        "options": [
-          {
-            "text": "Adottarlo",
-            "prompt": "Inserisci il nome del gatto:",
-            "effects": {
-              "set": { "gattoAdottato": true },
-              "create": { "gattoNome": "", "affinita_pet": 10 }
-            }
-          },
-          {
-            "text": "Portarlo all'enpa",
-            "effects": {
-              "set": { "gattoAdottato": false }
-            }
+  "uniqueEvents": [
+    {
+      "id": "gatto_abbandonato",
+      "day": 7,
+      "phase": "risveglio",
+      "text": "Mentre vai a scuola, senti un miagolio disperato provenire da un cassonetto. Ti avvicini e scopri un cartone con dentro un gatto abbandonato. Cosa decidi di fare?",
+      "image": "src/assets/narratives/gatto_abbandonato.png",
+      "options": [
+        {
+          "text": "Adottarlo",
+          "prompt": "Inserisci il nome del gatto:",
+          "effects": {
+            "set": { "gattoAdottato": true },
+            "create": { "gattoNome": "", "affinita_pet": 10 }
           }
-        ]
-      },
-      {
-        "id": "mare",
-        "day": 8,
-        "phase": "pomeriggio",
-        "text": "ti arriva un messaggio da un amico e ti chiede di andare in spiaggia",
-        "image": "src/assets/narratives/spiaggia.png",
-        "options": [
-          {
-            "text": "Vai in spiaggia",
-            "effects": {
-              "modificheStatistiche": { "stamina": 4 }
-            }
-          },
-          {
-            "text": "non andare",
-            "effects": {
-              "modificheStatistiche": { "stamina": 0 }
-            }
+        },
+        {
+          "text": "Portarlo all'enpa",
+          "effects": {
+            "set": { "gattoAdottato": false }
           }
-        ]
-      }
-    ]
-  }
-  
+        }
+      ]
+    },
+    {
+      "id": "m",
+      "day": 8,
+      "phase": "risveglio",
+      "text": "ti arriva un messaggio da un amico e ti chiede di andare in spiaggia",
+      "image": "src/assets/narratives/spiaggia.png",
+      "options": [
+        {
+          "text": "Vai in spiaggia",
+          "effects": {
+            "modificheStatistiche": { "stamina": 4 }
+          }
+        },
+        {
+          "text": "non andare",
+          "effects": {
+            "modificheStatistiche": { "stamina": 0 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mio1111111",
+      "day": 10,
+      "phase": "pomeriggio",
+      "text": "ti arriva un messaggio da un amico e ti chiede di andare in spiaggia",
+      "image": "src/assets/narratives/spiaggia.png",
+      "options": [
+        {
+          "text": "Vai in spiaggia",
+          "effects": {
+            "modificheStatistiche": { "stamina": 4 }
+          }
+        },
+        {
+          "text": "non andare",
+          "effects": {
+            "modificheStatistiche": { "stamina": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}
