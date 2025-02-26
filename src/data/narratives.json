@@ -1327,7 +1327,26 @@
     },
 
     "notte": {
-      
+      "petEvent": {
+        "testo": "{gattoNome} è sulla porta della tua stanza",
+        "checkStatistiche": [
+          {
+            "statistica": "affinita_gatto",
+            "soglia": 30,
+            "conseguenza": "{gattoNome} salta sul letto si struscia con affetto e fa le fusa rumorosamente."
+          },
+          {
+            "statistica": "affinita_gatto",
+            "soglia": 10,
+            "conseguenza": "{gattoNome} si avvicina e dopo aver studiato la situazione salta sul tuo letto."
+          },
+          {
+            "statistica": "affinita_gatto",
+            "soglia": 0,
+            "conseguenza": "{gattoNome} dopo averti guardato per qualche istante si gira e va verso il salotto."
+          }
+        ]
+      },
       "maschio": {
         "tabboz": {
           "testo": "La notte è scesa e la tua stanza è avvolta in un silenzio che invita al riposo. Tuttavia, l’adrenalina di una sfida videoludica continua a chiamarti. Cedi al sonno o lasciati trasportare dall’emozione di una lunga sessione di gioco?",
