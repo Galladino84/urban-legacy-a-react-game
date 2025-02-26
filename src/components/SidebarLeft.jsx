@@ -20,16 +20,21 @@ function SidebarLeft() {
   const placeholderMirror = `src/assets/mirrors/mirror_placeholder.png`;
 
   const handleReset = () => {
-    if (window.confirm("Sei sicuro di voler resettare il personaggio e i progressi?")) {
-      ["personaggio", "giorno", "fase", "data", "uniqueEventsCompleted"].forEach(localStorage.removeItem);
-      window.location.href = "/";
+    if (window.confirm("⚠️ Sei sicuro di voler resettare il personaggio e i progressi?")) {
+      // ✅ Corretto l'uso di forEach con funzione freccia
+      ["personaggio", "giorno", "fase", "data", "uniqueEventsCompleted"].forEach((key) => {
+        localStorage.removeItem(key); // Invocazione valida e senza errori
+      });
+  
+      alert("✅ Personaggio e progressi resettati!");
+      window.location.href = "/"; // Reindirizza alla schermata iniziale
     }
   };
+  
 
   const handlePuliziaDati = () => {
     const personaggioAggiornato = { ...personaggio };
 
-    // Conversione e pulizia dei dati errati
     if (personaggioAggiornato.statistiche?.affinita_pet !== undefined) {
       personaggioAggiornato.statistiche["affinità_gatto"] = safeStat("affinita_pet");
       delete personaggioAggiornato.statistiche.affinita_pet;
@@ -44,7 +49,7 @@ function SidebarLeft() {
   const renderStars = (valore = 0) => {
     const safeValue = Math.max(0, Math.min(valore, 5)); // Blocco tra 0 e 5
     const stellePiene = "⭐".repeat(safeValue);
-    const stelleVuote = "❌".repeat(Math.max(0, 5 - safeValue)); // Assicura che non sia negativo
+    const stelleVuote = "❌".repeat(5 - safeValue); // Evita valori negativi
     return stellePiene + stelleVuote;
   };
 
