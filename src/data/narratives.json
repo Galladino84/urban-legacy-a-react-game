@@ -227,7 +227,8 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "Fai colazione da solo",
@@ -249,7 +250,8 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "Fai colazione da solo",
@@ -271,7 +273,8 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "Fai colazione da solo",
@@ -293,7 +296,8 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "Fai colazione da solo",
@@ -317,7 +321,8 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "Fai colazione da solo",
@@ -339,7 +344,8 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "Fai colazione da solo",
@@ -361,7 +367,8 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "Fai colazione da solo",
@@ -383,7 +390,8 @@
             {
               "testo": "Fai colazione con la tua famiglia",
               "conseguenza": "Ti siedi con i tuoi famigliari iniziando a chiacchierare con loro.",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "Fai colazione da solo",
@@ -845,7 +853,8 @@
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 },
+              "famiglia": true
 
             }
           ]
@@ -880,7 +889,8 @@
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 },
+              "famiglia": true
 
             }
           ]
@@ -915,7 +925,8 @@
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 },
+              "famiglia": true
 
             }
           ]
@@ -950,7 +961,8 @@
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 },
+              "famiglia": true
 
             }
           ]
@@ -987,7 +999,8 @@
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 },
+              "famiglia": true
 
             }
           ]
@@ -1022,7 +1035,8 @@
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 },
+              "famiglia": true
 
             }
           ]
@@ -1057,7 +1071,8 @@
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 },
+              "famiglia": true
 
             }
           ]
@@ -1092,7 +1107,8 @@
             {
               "testo": "Passi il tempo con la famiglia",
               "conseguenza": "Ti prepari per uscire con qualcuno",
-              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 }
+              "modificheStatistiche": { "stamina": 1, "affinità_famiglia": 3 },
+              "famiglia": true
 
             }
           ]
@@ -1117,7 +1133,8 @@
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "messaggi un contatto",
@@ -1144,7 +1161,8 @@
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "messaggi un contatto",
@@ -1171,7 +1189,8 @@
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "messaggi un contatto",
@@ -1198,7 +1217,8 @@
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "messaggi un contatto",
@@ -1227,7 +1247,8 @@
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "messaggi un contatto",
@@ -1254,7 +1275,8 @@
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "messaggi un contatto",
@@ -1281,7 +1303,8 @@
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "messaggi un contatto",
@@ -1308,7 +1331,8 @@
             {
               "testo": "guardi un film con la famiglia",
               "conseguenza": "ti siedi davanti alla tv con la tua fasmiglia",
-              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 }
+              "modificheStatistiche": { "affinità_famiglia": 2, "stamina": 1 },
+              "famiglia": true
             },
             {
               "testo": "messaggi un contatto",

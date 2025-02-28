@@ -30,10 +30,11 @@ function CharacterCreation() {
   const [nome, setNome] = useState("");
   const [cognome, setCognome] = useState("");
   const [sesso, setSesso] = useState("");
-  const [percorso, setPercorso] = useState("Tabboz");
+  const [percorso, setPercorso] = useState(""); // Percorso obbligatorio
   const [orientamento, setOrientamento] = useState("Etero");
   const [famiglia, setFamiglia] = useState({ mamma: false, papà: false, sorella: false, fratello: false });
   const [nomiFamiliari, setNomiFamiliari] = useState({ mamma: "", papà: "", sorella: "", fratello: "" });
+  const [errorMessage, setErrorMessage] = useState(""); // Gestione errori
 
   const handleFamigliaChange = (e) => {
     const { name, checked } = e.target;
@@ -47,6 +48,20 @@ function CharacterCreation() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setErrorMessage("");
+
+    // ✅ Controllo percorso obbligatorio
+    if (!percorso) {
+      setErrorMessage("⚠️ Devi scegliere un percorso prima di creare il personaggio.");
+      return;
+    }
+
+    // ✅ Controllo almeno un membro della famiglia obbligatorio
+    const haAlmenoUnMembro = Object.values(famiglia).some((val) => val);
+    if (!haAlmenoUnMembro) {
+      setErrorMessage("⚠️ Devi selezionare almeno un membro della famiglia.");
+      return;
+    }
 
     const statistiche = calcolaStatisticheIniziali(percorso, sesso);
 
@@ -66,14 +81,19 @@ function CharacterCreation() {
       },
     };
 
-    // Se il giocatore inserisce "Norasmoke" come nome e cognome e sceglie "Goth" femmina,
-    // imposta giorno=7 e fase="risveglio" per testare rapidamente l'evento unico.
+    // ✅ Reset degli eventi unici completati
+    console.log("Eventi unici prima del reset:", localStorage.getItem("uniqueEventsCompleted"));
+    localStorage.removeItem("uniqueEventsCompleted");
+    console.log("Eventi unici dopo il reset:", localStorage.getItem("uniqueEventsCompleted"));
+
+    // ✅ Check per avvio automatico evento unico "Norasmoke"
     if (
       nome.trim().toLowerCase() === "norasmoke" &&
       cognome.trim().toLowerCase() === "norasmoke" &&
       percorso === "Goth" &&
       sesso === "Femmina"
     ) {
+      console.log("🔮 Norasmoke riconosciuta! Setto giorno 7, fase 1 (risveglio)");
       localStorage.setItem("giorno", "7");
       localStorage.setItem("fase", "risveglio");
     } else {
@@ -81,15 +101,17 @@ function CharacterCreation() {
       localStorage.setItem("fase", "0");
     }
 
+    console.log("✅ Personaggio creato:", personaggio);
     localStorage.setItem("personaggio", JSON.stringify(personaggio));
     window.location.href = "/game";
   };
 
-  
-
   return (
     <div className="container mt-4">
       <h2>Creazione del Personaggio</h2>
+      
+      {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
+
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label>Nome</label>
@@ -115,20 +137,12 @@ function CharacterCreation() {
 
         <div className="mb-3">
           <label>Percorso</label>
-          <select className="form-select" value={percorso} onChange={(e) => setPercorso(e.target.value)}>
-            <option>Tabboz</option>
-            <option>Goth</option>
-            <option>Metallaro</option>
-            <option>Nerd</option>
-          </select>
-        </div>
-
-        <div className="mb-3">
-          <label>Orientamento Sessuale</label>
-          <select className="form-select" value={orientamento} onChange={(e) => setOrientamento(e.target.value)}>
-            <option>Etero</option>
-            <option>Omosessuale</option>
-            <option>Bisessuale</option>
+          <select className="form-select" value={percorso} onChange={(e) => setPercorso(e.target.value)} required>
+            <option value="">-- Seleziona un percorso --</option>
+            <option value="Tabboz">Tabboz</option>
+            <option value="Goth">Goth</option>
+            <option value="Metallaro">Metallaro</option>
+            <option value="Nerd">Nerd</option>
           </select>
         </div>
 

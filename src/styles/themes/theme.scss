@@ -472,3 +472,45 @@
     font-size: 1rem;
   }
 }
+
+.phone-notification {
+  position: relative;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.popup {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1000;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+

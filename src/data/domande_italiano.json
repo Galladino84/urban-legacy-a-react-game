@@ -1,0 +1,105 @@
+{
+    "domande": [
+      {
+        "domanda": "Qual è il complemento oggetto nella frase 'Marco legge un libro'?",
+        "opzioni": ["Marco", "legge", "un libro", "nessuno"],
+        "corretta": "un libro"
+      },
+      {
+        "domanda": "Quale tra le seguenti parole è un avverbio?",
+        "opzioni": ["bello", "rapidamente", "libro", "correre"],
+        "corretta": "rapidamente"
+      },
+      {
+        "domanda": "Chi ha scritto 'I Promessi Sposi'?",
+        "opzioni": ["Dante Alighieri", "Giacomo Leopardi", "Alessandro Manzoni", "Giovanni Verga"],
+        "corretta": "Alessandro Manzoni"
+      },
+      {
+        "domanda": "Quale di queste è una congiunzione?",
+        "opzioni": ["e", "libro", "coraggioso", "lentamente"],
+        "corretta": "e"
+      },
+      {
+        "domanda": "Qual è la funzione del soggetto in una frase?",
+        "opzioni": ["Indica chi compie l'azione", "Descrive l'azione", "Precisa un oggetto", "Unisce due frasi"],
+        "corretta": "Indica chi compie l'azione"
+      },
+      {
+        "domanda": "Quale tra questi è un verbo al passato remoto?",
+        "opzioni": ["legge", "leggeva", "lessi", "leggerà"],
+        "corretta": "lessi"
+      },
+      {
+        "domanda": "Come si chiama la parte variabile della parola che indica il tempo del verbo?",
+        "opzioni": ["Radice", "Desinenza", "Prefisso", "Suffisso"],
+        "corretta": "Desinenza"
+      },
+      {
+        "domanda": "Qual è l'antonymo di 'felice'?",
+        "opzioni": ["contento", "triste", "gioioso", "allegro"],
+        "corretta": "triste"
+      },
+      {
+        "domanda": "Quale tra queste frasi è corretta?",
+        "opzioni": ["Ho mangiato ieri sera.", "Mangiai domani.", "Vado andare al negozio.", "Lui mangia mangia sempre."],
+        "corretta": "Ho mangiato ieri sera."
+      },
+      {
+        "domanda": "Quale tra le seguenti parole è un aggettivo qualificativo?",
+        "opzioni": ["correre", "felice", "presto", "libro"],
+        "corretta": "felice"
+      },
+      {
+        "domanda": "Chi è l'autore de 'La Divina Commedia'?",
+        "opzioni": ["Dante Alighieri", "Alessandro Manzoni", "Italo Calvino", "Luigi Pirandello"],
+        "corretta": "Dante Alighieri"
+      },
+      {
+        "domanda": "Quale tra queste parole è un pronome?",
+        "opzioni": ["noi", "libro", "correre", "grande"],
+        "corretta": "noi"
+      },
+      {
+        "domanda": "Qual è il plurale di 'braccio' nel significato anatomico?",
+        "opzioni": ["bracci", "braccia", "braccie", "braccii"],
+        "corretta": "braccia"
+      },
+      {
+        "domanda": "Come si chiama la parte invariabile della parola?",
+        "opzioni": ["Tema", "Radice", "Desinenza", "Prefisso"],
+        "corretta": "Radice"
+      },
+      {
+        "domanda": "Quale tra questi è un verbo transitivo?",
+        "opzioni": ["correre", "mangiare", "camminare", "dormire"],
+        "corretta": "mangiare"
+      },
+      {
+        "domanda": "Quale tra le seguenti parole è un sinonimo di 'veloce'?",
+        "opzioni": ["lento", "rapido", "stanco", "grande"],
+        "corretta": "rapido"
+      },
+      {
+        "domanda": "Quale tra queste frasi è al futuro semplice?",
+        "opzioni": ["Andrò al mare domani.", "Vado al mare.", "Andavo al mare.", "Sono andato al mare."],
+        "corretta": "Andrò al mare domani."
+      },
+      {
+        "domanda": "Cosa indica il complemento di luogo?",
+        "opzioni": ["Dove si svolge l'azione", "Quando si svolge l'azione", "Chi compie l'azione", "Perché si svolge l'azione"],
+        "corretta": "Dove si svolge l'azione"
+      },
+      {
+        "domanda": "Quale di queste parole è un sostantivo astratto?",
+        "opzioni": ["amore", "sedia", "penna", "tavolo"],
+        "corretta": "amore"
+      },
+      {
+        "domanda": "Qual è l'opposto di 'alto'?",
+        "opzioni": ["grande", "basso", "lungo", "largo"],
+        "corretta": "basso"
+      }
+    ]
+  }
+  
