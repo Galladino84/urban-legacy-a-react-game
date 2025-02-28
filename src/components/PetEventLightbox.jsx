@@ -53,7 +53,7 @@ const PetEventLightbox = ({ petEvent, personaggio, onOptionSelected }) => {
       <div className="pet-event-content lightbox-container">
         <h2>Evento Animale Domestico</h2>
         <p>{petEvent.testo.replace("{gattoNome}", nomeGatto)}</p>
-
+        <img src="src/assets/avatars/cat.png" />
         {/* Se ci sono scelte, mostra i pulsanti delle scelte */}
         {petEvent.scelte && petEvent.scelte.length > 0 && !selectedOption ? (
           <div className="pet-event-options">
